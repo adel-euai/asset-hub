@@ -7,7 +7,7 @@ This repository serves as the centralized hub for storing, organizing, and deliv
 ## 📊 Status
 
 ![Status](https://img.shields.io/badge/status-active-brightgreen)
-![Version](https://img.shields.io/badge/version-1.0.3-blue)
+![Version](https://img.shields.io/badge/version-1.0.4-blue)
 ![License](https://img.shields.io/badge/license-Proprietary-red)
 
 ---
