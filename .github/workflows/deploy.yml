@@ -30,7 +30,7 @@ jobs:
       # 3. Copy LICENSE based on config
       - name: Copy LICENSE from Config
         run: |
-          CONFIG_PATH="legal-engine/legal.config.json"
+          CONFIG_PATH="./legal.config.json"
 
           FILE=$(cat $CONFIG_PATH | jq -r '.internal_license')
 
