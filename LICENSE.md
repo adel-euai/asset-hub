@@ -5,7 +5,7 @@ Last updated: 27 May 2026
 
 **Copyright (c) 2026 Adel Mahmoudian**
 
-All rights reserved. 
+All rights reserved.
 
 The **Adel | Asset Hub** and all associated materials are proprietary and intended for internal use by the author only.
 
