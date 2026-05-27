@@ -5,13 +5,13 @@ Last updated: 27 May 2026
 
 **Copyright (c) 2026 Adel Mahmoudian**
 
-All rights reserved. 
+All rights reserved.
 
 The **Adel | Asset Hub** and all associated materials are proprietary and intended for internal use by the author only.
 
 This License applies to the Adel | Asset Hub ecosystem (the “Product”), including but not limited to:
 
-    - Web Application(s)
+    - Web Application(s) 
     - Marketing Website / Landing Pages
     - Hubs
     - Hub Items / Entries / Assets (including any digital items, tools, or components)
