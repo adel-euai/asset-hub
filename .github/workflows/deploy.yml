@@ -28,22 +28,22 @@ jobs:
           token: ${{ secrets.MY_GITHUB_TOKEN }}
 
       # 3. Copy LICENSE based on config
-      - name: Copy LICENSE from Config
+      - name: Process and Copy LICENSE
         run: |
-          CONFIG_PATH="./legal.config.json"
-          # استخراج نام فایل از کانفیگ
-          FILE=$(jq -r '.legal_files[0]' "$CONFIG_PATH")
-            
-          # آدرس درست فایل که در مخزن legal-engine کپی شده است
-          SOURCE_PATH="legal-engine/src/$FILE"
+                CONFIG_PATH="./legal.config.json"
+                FILE=$(jq -r '.legal_files[0]' "$CONFIG_PATH")
+                APP_NAME=$(jq -r '.app_name' "$CONFIG_PATH")
+                SOURCE_PATH="legal-engine/src/$FILE"
 
-          if [ ! -f "$SOURCE_PATH" ]; then
-            echo "❌ File not found at: $SOURCE_PATH"
-            exit 1
-          fi
+                if [ ! -f "$SOURCE_PATH" ]; then
+                  echo "❌ File not found at: $SOURCE_PATH"
+                  exit 1
+                fi
 
-          # کپی به ریشه مخزن جاری
-          cp -f "$SOURCE_PATH" ./LICENSE.md
+                # خواندن فایل، جایگزینی تگ و ذخیره در ریشه
+                sed "s/{{APP_NAME}}/$APP_NAME/g" "$SOURCE_PATH" > ./LICENSE.md
+                
+                echo "✅ Processed and generated LICENSE.md with name: $APP_NAME"
 
       # 4. Commit & Push if changed
       - name: Commit LICENSE
