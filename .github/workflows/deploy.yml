@@ -32,14 +32,14 @@ jobs:
         run: |
           CONFIG_PATH="./legal.config.json"
 
-          FILE=$(cat $CONFIG_PATH | jq -r '.internal_license')
+          FILE=$(jq -r '.legal_files[]' "$CONFIG_PATH" | grep "license-int.md")
 
           if [ "$FILE" = "null" ] || [ -z "$FILE" ]; then
             echo "❌ No internal_license defined in config"
             exit 1
           fi
 
-          cp -f "legal-engine/$FILE" ./LICENSE.md
+          cp -f "$FILE" ./LICENSE.md
 
       # 4. Commit & Push if changed
       - name: Commit LICENSE
