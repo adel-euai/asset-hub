@@ -1,4 +1,4 @@
-# {{APP_NAME}} Product License
+# Adel | Asset Hub Product License
 
 Last updated: 27 May 2026**
 
@@ -7,9 +7,9 @@ Last updated: 27 May 2026**
 
 All rights reserved.
 
-The **{{APP_NAME}}** and all associated materials are proprietary and intended for internal use by the author only.
+The **Adel | Asset Hub** and all associated materials are proprietary and intended for internal use by the author only.
 
-This License applies to the {{APP_NAME}} ecosystem (the “Product”), including but not limited to:
+This License applies to the Adel | Asset Hub ecosystem (the “Product”), including but not limited to:
 
     - Web Application(s)
     - Marketing Website / Landing Pages
