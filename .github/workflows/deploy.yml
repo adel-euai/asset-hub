@@ -1,0 +1,56 @@
+name: Sync LICENSE from Legal Engine
+
+on:
+  push:
+    branches:
+      - main
+  repository_dispatch:
+    types: [update-legal]
+
+permissions:
+  contents: write
+
+jobs:
+  sync-license:
+    runs-on: ubuntu-latest
+
+    steps:
+      # 1. Checkout main repo
+      - name: Checkout Repo
+        uses: actions/checkout@v5
+
+      # 2. Checkout legal-engine
+      - name: Get Legal Engine
+        uses: actions/checkout@v5
+        with:
+          repository: Adel-EUAI/legal-engine
+          path: legal-engine
+          token: ${{ secrets.MY_GITHUB_TOKEN }}
+
+      # 3. Copy LICENSE based on config
+      - name: Copy LICENSE from Config
+        run: |
+          CONFIG_PATH="legal-engine/legal.config.json"
+
+          FILE=$(cat $CONFIG_PATH | jq -r '.internal_license')
+
+          if [ "$FILE" = "null" ] || [ -z "$FILE" ]; then
+            echo "❌ No internal_license defined in config"
+            exit 1
+          fi
+
+          cp -f "legal-engine/$FILE" ./LICENSE.md
+
+      # 4. Commit & Push if changed
+      - name: Commit LICENSE
+        run: |
+          git config user.email "action@github.com"
+          git config user.name "GitHub Action"
+
+          if git diff --quiet LICENSE.md; then
+            echo "No changes"
+          else
+            git add LICENSE.md
+            git commit -m "chore: sync LICENSE.md from legal-engine"
+            git push origin main
+          fi

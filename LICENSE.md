@@ -1,18 +1,27 @@
-# Adel | Asset Hub License
+# Adel | Asset Hub Product License
 
-Last Updated: 28 April 2026
+Last Updated: 27 May 2026
 
 Copyright (c) 2026 Adel Mahmoudian
 
 All rights reserved.
 
-The Adel | Asset Hub and all associated materials are proprietary and intended for internal use by the author only.
+The **Adel | Asset Hub** and all associated materials are proprietary and intended for internal use by the author only.
 
 ---
 
 ## 1. Scope
 
-This License applies to all components of the Adel | Asset Hub, including any existing or future related materials such as web applications, source code, backend services, APIs, UI/UX designs, assets, documentation, and deployed instances where applicable.
+This License applies to the **Adel | Asset Hub** ecosystem (the “Product”), including but not limited to:
+    <li>Web Application(s)</li>
+    <li>Marketing Website / Landing Pages</li>
+    <li>Hubs</li>
+    <li>Hub Items / Entries / Assets (including any digital items, tools, or components)</li>
+    <li>Source Code</li>
+    <li>Backend Services / APIs (if applicable)</li>
+    <li>UI/UX Design and Assets</li>
+    <li>Documentation and Related Materials</li>
+    <li>Any associated digital or deployed instances</li>
 
 ---
 
@@ -25,6 +34,7 @@ All intellectual property rights belong exclusively to the author (Adel Mahmoudi
 ## 3. Usage Restriction
 
 This content is restricted to internal use by the author only. No permission is granted to any third party to use, copy, modify, distribute, sublicense, or deploy any part of this project.
+Unauthorized use, reproduction, or distribution of this project or its contents is strictly prohibited.
 
 ---
 
@@ -51,7 +61,6 @@ This system may interact with third-party services. Such services are governed b
 ## 7. Changes
 
 The author reserves the right to modify this License at any time without prior notice.
-
 Continued use or reference to this project constitutes acceptance of the updated terms.
 
 ---
