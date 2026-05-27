@@ -34,12 +34,20 @@ jobs:
 
           FILE=$(jq -r '.legal_files[]' "$CONFIG_PATH" | grep "license-int.md")
 
-          if [ "$FILE" = "null" ] || [ -z "$FILE" ]; then
-            echo "❌ No internal_license defined in config"
+          if [ -z "$FILE" ]; then
+            echo "❌ license-int.md not found in config"
             exit 1
           fi
 
-          cp -f "$FILE" ./LICENSE.md
+          FILE_PATH="src/$FILE"
+
+          if [ ! -f "$FILE_PATH" ]; then
+            echo "❌ File not found: $FILE_PATH"
+            ls -R src
+            exit 1
+          fi
+
+          cp -f "$FILE_PATH" ./LICENSE.md
 
       # 4. Commit & Push if changed
       - name: Commit LICENSE
