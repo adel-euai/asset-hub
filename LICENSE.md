@@ -11,7 +11,7 @@ The **Adel | Asset Hub** and all associated materials are proprietary and intend
 
 This License applies to the Adel | Asset Hub ecosystem (the “Product”), including but not limited to:
 
-    - Web Application(s) 
+    - Web Application(s)
     - Marketing Website / Landing Pages
     - Hubs
     - Hub Items / Entries / Assets (including any digital items, tools, or components)
