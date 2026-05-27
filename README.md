@@ -20,10 +20,15 @@ asset-hub/
 ├── LICENSE.md              # Proprietary License (Copyright © 2026 Adel Mahmoudian)
 ├── package.json            # Project metadata + scripts (build / deploy)
 ├── README.md               # Developer documentation
+├── legal.config.json       # Legal & licensing configuration (custom policy layer) 
 ├── banner/                 # Project banner
 ├── cover/                  # Project cover
 ├── logo/                   # Project logo
-└── screenshot/             # Project screenshots
+├── og-image/               # Project og
+├── screenshot/             # Project screenshots
+└── .github/                # CI/CD & automation 
+     └── workflows/         # Workflow definitions 
+         └── deploy.yml     # GitHub Pages / Vercel deployment pipeline   
 ```
 
 ---
