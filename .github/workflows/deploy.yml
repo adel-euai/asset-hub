@@ -31,23 +31,19 @@ jobs:
       - name: Copy LICENSE from Config
         run: |
           CONFIG_PATH="./legal.config.json"
+          # استخراج نام فایل از کانفیگ
+          FILE=$(jq -r '.legal_files[0]' "$CONFIG_PATH")
+            
+          # آدرس درست فایل که در مخزن legal-engine کپی شده است
+          SOURCE_PATH="legal-engine/src/$FILE"
 
-          FILE=$(jq -r '.legal_files[]' "$CONFIG_PATH" | grep "license-int.md")
-
-          if [ -z "$FILE" ]; then
-            echo "❌ license-int.md not found in config"
+          if [ ! -f "$SOURCE_PATH" ]; then
+            echo "❌ File not found at: $SOURCE_PATH"
             exit 1
           fi
 
-          FILE_PATH="src/$FILE"
-
-          if [ ! -f "$FILE_PATH" ]; then
-            echo "❌ File not found: $FILE_PATH"
-            ls -R src
-            exit 1
-          fi
-
-          cp -f "$FILE_PATH" ./LICENSE.md
+          # کپی به ریشه مخزن جاری
+          cp -f "$SOURCE_PATH" ./LICENSE.md
 
       # 4. Commit & Push if changed
       - name: Commit LICENSE
