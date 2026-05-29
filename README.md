@@ -36,7 +36,7 @@ asset-hub/
 ## 👤 Author
 
 **Adel Mahmoudian**
-Process Engineer (MSc) and Web App Developer
+Process Engineer and Web App Developer
 
 ---
 
