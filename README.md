@@ -58,4 +58,4 @@ See the `LICENSE.md` file for detailed information.
 
 *Built for centralized asset management and efficient resource delivery.*
 
-© 2026–present Adel | Asset Hub
+© 2026–Present Adel Mahmoudian. All Rights Reserved.
