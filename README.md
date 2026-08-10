@@ -44,7 +44,7 @@ Process Engineer and Web App Developer
 
 * Email: [adel.euai@gmail.com](mailto:adel.euai@gmail.com)
 * LinkedIn: [https://www.linkedin.com/in/adel-euai](https://www.linkedin.com/in/adel-euai)
-* GitHub: [https://github.com/Adel-EUAI](https://github.com/Adel-EUAI)
+* GitHub: [https://github.com/Adel-EUAI](https://github.com/adel-euai)
 * Website: [adel-euai.github.io](https://adel-euai.github.io)
 
 ---
