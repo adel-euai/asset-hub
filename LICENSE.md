@@ -1,4 +1,4 @@
-# Adel | Asset Hub Product License***
+# Adel | Asset Hub Product License
 
 Last updated: 27 May 2026
 
