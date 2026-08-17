@@ -1,6 +1,6 @@
 # Adel | Asset Hub
 
-This repository serves as the centralized hub for storing, organizing, and delivering static assets used across projects developed by Adel Mahmoudian.
+This repository serves as the centralized hub for storing, organizing, and delivering static assets used across projects developed by Adel Mahmoudian. 
 
 ---
 
