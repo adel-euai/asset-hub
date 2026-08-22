@@ -1,73 +1,84 @@
 # Adel | Asset Hub Product License
 
-Last updated: 27 May 2026
+Last updated: 22 August 2026
 
 
-**Copyright (c) 2026 Adel Mahmoudian**
+    **Copyright (c) 2026 Adel Mahmoudian**
 
-All rights reserved.
+    All rights reserved.
 
-The **Adel | Asset Hub** and all associated materials are proprietary and intended for internal use by the author only.
+    The **Adel | Asset Hub** and all associated materials are proprietary and were designed and implemented by the author for personal use, development, experimentation, and demonstration.
 
-This License applies to the Adel | Asset Hub ecosystem (the “Product”), including but not limited to:
+    This License applies to the Adel | Asset Hub ecosystem (the “Product”), including but not limited to:
 
-    - Web Application(s)
-    - Marketing Website / Landing Pages
-    - Hubs
-    - Hub Items / Entries / Assets (including any digital items, tools, or components)
-    - Source Code
-    - Backend Services / APIs (if applicable)
-    - UI/UX Design and Assets
-    - Documentation and Related Materials
-    - Any associated digital or deployed instances
+    
+        - Web Application(s)
+        - Marketing Website / Landing Pages
+        - Hubs and Hub Items
+        - Source Code
+        - Backend Services / APIs, if applicable
+        - UI/UX Design and Assets
+        - Documentation and Related Materials
+        - Any associated digital or deployed instances
     
 ---
 
-## 1. Ownership
+    ## 1. Ownership
 
-All intellectual property rights of the Product belong exclusively to the author (Adel Mahmoudian). No rights are granted or licensed to any third party under any circumstances.
+    All intellectual property rights in the Product, including its source code, design, interface, visual assets, documentation, and related materials, belong exclusively to the author, Adel Mahmoudian.
 
----
-
-## 2. Usage Restriction
-
-This content is restricted to internal use by the author only. No permission is granted to any third party to use, copy, modify, distribute, sublicense, or deploy any part of this project.
-
-Unauthorized use, reproduction, or distribution of this project or its contents is strictly prohibited.
+    No ownership rights or licenses are granted to third parties through access to, viewing of, or interaction with the Product.
 
 ---
 
-## 3. Purpose
+    ## 2. Usage Restriction
 
-This project is intended solely for personal development, testing, and experimentation by the author.
+    The Product is intended for personal use, development, experimentation, and demonstration by the author.
 
----
-
-## 4. Disclaimer
-
-THIS CONTENT IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED.
-
-IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR ANY CLAIM, DAMAGES, OR OTHER LIABILITY ARISING FROM THE USE OF THIS CONTENT.
+    No permission is granted to third parties to copy, reproduce, modify, redistribute, sublicense, republish, deploy, or create derivative works from the Product or any substantial part of it without prior written permission from the author.
 
 ---
 
-## 5. Third-Party Services
+    ## 3. Public Demonstration
 
-his system may interact with third-party services. Such services are governed by their own terms. The author assumes no responsibility for their behavior, content, or policies.
+    Certain parts of the Product may be publicly accessible for demonstration, presentation, or portfolio purposes.
 
----
-
-
-## 6. Changes to License
-
-The author reserves the right to modify this License at any time without prior notice. Continued use or reference to this project constitutes acceptance of the updated terms.
+    Public access does not constitute a transfer of ownership or a license to use, reproduce, modify, distribute, or deploy the Product or its underlying materials.
 
 ---
 
-## 7. Contact
+    ## 4. Purpose
 
-For licensing inquiries, permissions, or questions:
+    The Product was created primarily as a personal project for exploring ideas, developing technical concepts, testing implementations, and demonstrating the resulting work.
 
-**adel.euai@gmail.com**
+---
+
+    ## 5. Disclaimer
+
+    THIS CONTENT IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED.
+
+    IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR ANY CLAIM, DAMAGES, OR OTHER LIABILITY ARISING FROM THE USE OF OR INABILITY TO USE THIS CONTENT.
+
+---
+
+    ## 6. Third-Party Services
+
+    This system may interact with third-party services, libraries, APIs, or other external components. Such services and components may be governed by their own terms and licenses.
+
+    The author assumes no responsibility for the policies, availability, behavior, or content of third-party services.
+
+---
+
+    ## 7. Changes to License
+
+    The author reserves the right to modify this License at any time. The version published with the Product represents the terms applicable to that version.
+
+---
+
+    ## 8. Contact
+
+    For permissions, licensing inquiries, or questions regarding the Product:
+
+    **adel.euai@gmail.com**
 
 ---
