@@ -8,12 +8,12 @@ This repository serves as the centralized hub for storing, organizing, and deliv
 
 ![Status](https://img.shields.io/badge/status-active-brightgreen)
 ![Version](https://img.shields.io/badge/version-1.0.10-blue)
-![License](https://img.shields.io/badge/license-Proprietary-red)
+![License](https://img.shields.io/badge/license-Proprietary-red) 
 
 ---
 
 ## 📁 Project Structure
-
+ 
 ```text
 asset-hub/
 ├── .gitignore              # Git Filter: excludes sensitive & heavy files
