@@ -1,6 +1,6 @@
 # Adel | Asset Hub Product License
 
-Last updated: 22 August 2026-
+Last updated: 22 August 2026
 
 
     **Copyright (c) 2026 Adel Mahmoudian**
