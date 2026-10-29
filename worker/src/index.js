@@ -1428,30 +1428,51 @@ async function serveCurrentAsset(
     );
   }
 
-  const currentFile =
-    await findCurrentAssetFile(
-      env,
-      id,
-      assetType,
-      current.filename
-    );
+  let filePath;
 
-  if (!currentFile) {
-    throw httpError(
-      "Current asset file not found",
-      404
-    );
+  if (spec.slot) {
+    const extension =
+      String(
+        current.filename ||
+          "png"
+      )
+        .split(".")
+        .pop()
+        .toLowerCase();
+
+    filePath =
+      `projects/${id}/` +
+      `${spec.folder}/` +
+      `${spec.slot}.${extension}`;
+  } else {
+    const currentFile =
+      await findCurrentAssetFile(
+        env,
+        id,
+        assetType,
+        current.filename
+      );
+
+    if (!currentFile) {
+      throw httpError(
+        "Current asset file not found",
+        404
+      );
+    }
+
+    filePath =
+      currentFile.path;
   }
 
   const bytes =
     await githubGetRaw(
       env,
-      currentFile.path
+      filePath
     );
 
   if (!bytes) {
     throw httpError(
-      `Current asset not found: ${currentFile.path}`,
+      `Current asset not found: ${filePath}`,
       404
     );
   }
@@ -1465,7 +1486,7 @@ async function serveCurrentAsset(
         "Content-Type":
           current.contentType ||
           getContentTypeFromFilename(
-            currentFile.name
+            filePath
           ),
 
         "Cache-Control":
