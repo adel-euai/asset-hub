@@ -1,8 +1,14 @@
 {
-  "name": "asset-hub",
-  "version": "1.0.10",
-  "description": "Centralized repository for managing and serving static assets across Adel ecosystem projects",
-  "author": "Adel Mahmoudian",
-  "license": "Proprietary",
-  "private": true
+  "name": "adel-asset-hub",
+  "private": true,
+  "version": "1.0.0",
+  "scripts": {
+    "dev": "wrangler dev",
+    "build": "node build.mjs",
+    "deploy": "npm run build && wrangler deploy"
+  },
+  "devDependencies": {
+    "javascript-obfuscator": "^4.1.1",
+    "wrangler": "^4.0.0"
+  }
 }

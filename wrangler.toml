@@ -1,0 +1,15 @@
+name = "asset-hub"
+main = "worker/src/index.js"
+compatibility_date = "2026-10-28"
+
+compatibility_flags = ["global_fetch_strictly_public"]
+
+[vars]
+PROJECT = "asset-hub"
+GITHUB_OWNER = "Adel-EUAI"
+GITHUB_REPO = "asset-hub"
+
+# Secrets:
+# AUTH_SERVICE_URL
+# AUTH_SERVICE_PROJECT
+# GITHUB_TOKEN

@@ -1,0 +1,397 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Adel | Asset Hub</title>
+  <meta name="description" content="Adel | Asset Hub">
+  <link rel="stylesheet" href="./styles.css">
+</head>
+
+<body>
+
+  <main id="app">
+
+    <!-- LOGIN -->
+
+    <section id="loginView" class="view">
+
+      <div class="card login-card">
+
+        <div class="eyebrow">
+          ASSET HUB
+        </div>
+
+        <h1>
+          Adel | Asset Hub
+        </h1>
+
+        <p>
+          Secure digital asset management.
+        </p>
+
+        <form id="loginForm">
+
+          <label>
+            Username
+
+            <input
+              id="username"
+              autocomplete="username"
+              required
+            >
+          </label>
+
+          <label>
+            Password
+
+            <input
+              id="password"
+              type="password"
+              autocomplete="current-password"
+              required
+            >
+          </label>
+
+          <label class="legal">
+
+            <input
+              id="legalAgreement"
+              type="checkbox"
+            >
+
+            <span>
+              I agree to the Terms and Privacy Policy.
+            </span>
+
+          </label>
+
+          <button
+            id="loginButton"
+            type="submit"
+            disabled
+          >
+            Sign In
+          </button>
+
+          <div
+            id="loginError"
+            class="error"
+          ></div>
+
+        </form>
+
+      </div>
+
+    </section>
+
+
+    <!-- PROJECT LIST -->
+
+    <section
+      id="appView"
+      class="view hidden"
+    >
+
+      <header class="topbar">
+
+        <div>
+
+          <div class="eyebrow">
+            ASSET HUB
+          </div>
+
+          <h1>
+            Projects
+          </h1>
+
+        </div>
+
+        <div class="top-actions">
+
+          <button
+            id="newProjectButton"
+            class="primary"
+          >
+            + New Project
+          </button>
+
+          <button
+            id="logoutButton"
+            class="ghost"
+          >
+            Logout
+          </button>
+
+        </div>
+
+      </header>
+
+
+      <div
+        id="projectList"
+        class="project-grid"
+      ></div>
+
+
+      <div
+        id="appError"
+        class="error"
+      ></div>
+
+    </section>
+
+
+    <!-- PROJECT -->
+
+    <section
+      id="projectView"
+      class="view hidden"
+    >
+
+      <header class="topbar">
+
+        <div>
+
+          <button
+            id="backButton"
+            class="ghost"
+          >
+            ← Projects
+          </button>
+
+          <div class="eyebrow">
+            PROJECT
+          </div>
+
+          <h1 id="projectTitle">
+            Project
+          </h1>
+
+        </div>
+
+      </header>
+
+
+      <!-- ASSETS -->
+
+      <div
+        id="assetGrid"
+        class="asset-grid"
+      ></div>
+
+
+      <div
+        id="projectError"
+        class="error"
+      ></div>
+
+    </section>
+
+  </main>
+
+
+  <!-- NEW PROJECT DIALOG -->
+
+  <dialog id="projectDialog">
+
+    <form
+      id="projectForm"
+      method="dialog"
+      class="dialog-card"
+    >
+
+      <div class="eyebrow">
+        NEW PROJECT
+      </div>
+
+      <h2>
+        Create Project
+      </h2>
+
+
+      <label>
+        Project Name
+
+        <input
+          id="projectName"
+          required
+        >
+      </label>
+
+
+      <label>
+        Project ID
+
+        <input
+          id="projectId"
+          placeholder="auto-generated if empty"
+        >
+      </label>
+
+
+      <div class="dialog-actions">
+
+        <button
+          type="button"
+          id="cancelProject"
+          class="ghost"
+        >
+          Cancel
+        </button>
+
+        <button
+          type="submit"
+          class="primary"
+        >
+          Create
+        </button>
+
+      </div>
+
+    </form>
+
+  </dialog>
+
+
+  <!-- RENAME PROJECT DIALOG -->
+
+  <dialog id="renameProjectDialog">
+
+    <form
+      id="renameProjectForm"
+      class="dialog-card"
+    >
+
+      <div class="eyebrow">
+        PROJECT
+      </div>
+
+      <h2>
+        Rename Project
+      </h2>
+
+
+      <label>
+        Project Name
+
+        <input
+          id="renameProjectName"
+          required
+        >
+      </label>
+
+
+      <div class="dialog-actions">
+
+        <button
+          type="button"
+          id="cancelRenameProject"
+          class="ghost"
+        >
+          Cancel
+        </button>
+
+        <button
+          type="submit"
+          class="primary"
+        >
+          Save Changes
+        </button>
+
+      </div>
+
+
+      <div
+        id="renameProjectError"
+        class="error"
+      ></div>
+
+    </form>
+
+  </dialog>
+
+
+  <!-- ASSET DIALOG -->
+
+  <dialog id="assetDialog">
+
+    <form
+      id="assetForm"
+      class="dialog-card"
+    >
+
+      <div
+        class="eyebrow"
+        id="assetDialogEyebrow"
+      >
+        ASSET
+      </div>
+
+
+      <h2 id="assetDialogTitle">
+        Upload
+      </h2>
+
+
+      <label>
+        File
+
+        <input
+          id="assetFile"
+          type="file"
+          accept="image/*"
+          required
+        >
+      </label>
+
+
+      <div
+        id="assetPreview"
+        class="upload-preview hidden"
+      >
+        <span>
+          Select an image to preview.
+        </span>
+      </div>
+
+
+      <div class="dialog-actions">
+
+        <button
+          type="button"
+          id="cancelAsset"
+          class="ghost"
+        >
+          Cancel
+        </button>
+
+
+        <button
+          type="submit"
+          id="commitAssetButton"
+          class="primary"
+        >
+          Upload
+        </button>
+
+      </div>
+
+
+      <div
+        id="assetError"
+        class="error"
+      ></div>
+
+    </form>
+
+  </dialog>
+
+
+  <script
+    src="./app.js"
+    defer
+  ></script>
+
+</body>
+</html>

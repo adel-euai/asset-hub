@@ -1,61 +1,92 @@
 # Adel | Asset Hub
 
-This repository serves as the centralized hub for storing, organizing, and delivering static assets used across projects developed by Adel Mahmoudian. 
+Private digital asset management system for Adel projects.
 
----
+## Asset Types
 
-## 📊 Status
+Each project contains:
 
-![Status](https://img.shields.io/badge/status-active-brightgreen)
-![Version](https://img.shields.io/badge/version-1.0.10-blue)
-![License](https://img.shields.io/badge/license-Proprietary-red) 
+- Banner — 4 × 1
+- Cover — 1.9 × 1
+- Logo — 1 × 1
+- OG Image — 1.9 × 1
+- Screenshots — 1.9 × 1, up to 9
+- Sub Logos — 1 × 1, up to 99
 
----
+Assets are directly replaced. There is no revision, archive, or version history system.
 
-## 📁 Project Structure
- 
+## Architecture
+
+Browser UI → Asset Hub Worker → Central Auth Service / Private GitHub Repository
+
+The GitHub token is never exposed to the browser.
+
+## Configuration
+
+Set these Cloudflare Worker secrets:
+
 ```text
-asset-hub/
-├── .gitignore              # Git Filter: excludes sensitive & heavy files
-├── LICENSE.md              # Proprietary License (Copyright © 2026 Adel Mahmoudian)
-├── package.json            # Project metadata + scripts (build / deploy)
-├── README.md               # Developer documentation
-├── legal.config.json       # Legal & licensing configuration (custom policy layer) 
-├── banner/                 # Project banner
-├── cover/                  # Project cover
-├── logo/                   # Project logo
-├── og-image/               # Project og
-├── screenshot/             # Project screenshots
-└── .github/                # CI/CD & automation 
-     └── workflows/         # Workflow definitions 
-         └── deploy.yml     # GitHub Pages / Vercel deployment pipeline   
+AUTH_SERVICE_URL
+AUTH_SERVICE_PROJECT
+GITHUB_TOKEN
 ```
 
----
+The repository owner/name are configured in `wrangler.toml`.
 
-## 👤 Author
+## Development
 
-**Adel Mahmoudian**
-Process Engineer and Web App Developer
+```bash
+npm install
+npx wrangler dev
+```
 
----
+## Deployment
 
-## 📞 Contact
+```bash
+npx wrangler deploy
+```
 
-* Email: [adel.euai@gmail.com](mailto:adel.euai@gmail.com)
-* LinkedIn: [https://www.linkedin.com/in/adel-euai](https://www.linkedin.com/in/adel-euai)
-* GitHub: [https://github.com/Adel-EUAI](https://github.com/adel-euai)
-* Website: [adel-euai.github.io](https://adel-euai.github.io)
+Then set the secrets:
 
----
+```bash
+npx wrangler secret put AUTH_SERVICE_URL
+npx wrangler secret put AUTH_SERVICE_PROJECT
+npx wrangler secret put GITHUB_TOKEN
+```
 
-## 📜 License
+## GitHub Permissions
 
-This project is licensed under a Proprietary License.  
-See the `LICENSE.md` file for detailed information.
+The GitHub token should have only the minimum repository permissions required for the private `asset-hub` repository, including repository contents read/write.
 
----
+## Repository Structure
 
-*Built for centralized asset management and efficient resource delivery.*
+Each project's assets are stored using stable paths:
 
-© 2026–Present Adel Mahmoudian. All Rights Reserved.
+```text
+projects/
+└── project-name/
+    ├── banner.png
+    ├── cover.png
+    ├── logo.png
+    ├── og-image.png
+    ├── screenshot/
+    │   ├── 1.png
+    │   ├── 2.png
+    │   └── ...9.png
+    └── sub-logo/
+        ├── 1.png
+        ├── 2.png
+        └── ...99.png
+```
+
+When an asset is replaced, the existing file is overwritten directly at the same path.
+
+The file extension must remain unchanged when replacing an existing asset so that the public asset URL remains stable.
+
+## Notes
+
+The login endpoint is proxied by the Worker to the existing Central Auth Service architecture. If the existing Auth Service uses a different exact request/response contract, update only the Worker authentication adapter; the UI and Asset Hub architecture remain unchanged.
+
+The GitHub repository is private and all repository operations are performed server-side by the Worker.
+
+There is no archive, revision, or version-history system. Each project maintains only its current assets.

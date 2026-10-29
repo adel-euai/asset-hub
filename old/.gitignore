@@ -1,0 +1,78 @@
+# =========================
+# Cloudflare Workers
+# =========================
+.wrangler/
+.dev-vars
+
+# =========================
+# Dependencies
+# =========================
+node_modules/
+
+# =========================
+# Build / Output
+# =========================
+dist/
+build/
+out/
+.npm/
+
+# =========================
+# Cache / Build Storage
+# =========================
+.cache/
+.parcel-cache/
+
+# =========================
+# Environment & Secrets
+# =========================
+.env
+.env.local
+.env.*
+secrets.json
+*.secret.json
+
+# =========================
+# Logs
+# =========================
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# =========================
+# OS files
+# =========================
+.DS_Store
+Thumbs.db
+
+# =========================
+# Editors / IDEs
+# =========================
+.vscode/
+.idea/
+*.swp
+*.bak
+
+# =========================
+# TypeScript (optional)
+# =========================
+*.tsbuildinfo
+
+# =========================
+# Python (only if used in tools/scripts)
+# =========================
+__pycache__/
+*.py[cod]
+*$py.class
+.venv/
+venv/
+ENV/
+env/
+
+# =========================
+# Databases (local only)
+# =========================
+*.sqlite3
+*.db
