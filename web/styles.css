@@ -258,9 +258,13 @@ button:disabled {
 }
 
 .preview.cover,
-.preview.og-image,
-.preview.screenshot {
+.preview.og-image {
   aspect-ratio: 1.9 / 1;
+  min-height: 0;
+}
+
+.preview.screenshot {
+  aspect-ratio: 2.25 / 1;
   min-height: 0;
 }
 

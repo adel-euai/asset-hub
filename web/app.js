@@ -806,7 +806,7 @@
             renderAssetCard(
               `screenshot-${slot}`,
               `Screenshot ${slot}`,
-              "1.9 × 1",
+              "2.25 × 1",
               "wide",
               assets
                 .screenshots?.[
@@ -916,7 +916,7 @@
             </h3>
 
             <p>
-              Up to 9 screenshots · 1.9 × 1
+              Up to 9 screenshots · 2.25 × 1
             </p>
 
           </div>
