@@ -208,11 +208,19 @@ button:disabled {
 }
 
 .asset-grid {
-  display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 18px;
+  display: block;
+  width: 100%;
 }
 
+.asset-section {
+  width: 100%;
+  box-sizing: border-box;
+  margin-bottom: 28px;
+}
+
+.asset-section:last-child {
+  margin-bottom: 0;
+}
 .asset-card {
   padding: 18px;
 }
