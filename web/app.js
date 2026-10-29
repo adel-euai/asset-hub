@@ -5,6 +5,9 @@
     window.ASSET_HUB_API_BASE ||
     "https://asset-hub.adel-euai.workers.dev";
 
+  const ASSET_BASE_URL =
+  "https://adel-euai.github.io/asset-hub";
+
   const state = {
     projects: [],
     currentProject: null,
@@ -1020,6 +1023,47 @@
     );
   }
 
+  document
+  .querySelectorAll(
+    "[data-copy-link]"
+  )
+  .forEach(
+    (button) => {
+      button.addEventListener(
+        "click",
+        async () => {
+          const url =
+            button.dataset
+              .copyLink;
+
+          try {
+            await navigator.clipboard.writeText(
+              url
+            );
+
+            const original =
+              button.textContent;
+
+            button.textContent =
+              "✓";
+
+            setTimeout(
+              () => {
+                button.textContent =
+                  original;
+              },
+              1200
+            );
+
+          } catch {
+            button.textContent =
+              "!";
+          }
+        }
+      );
+    }
+  );
+
   function renderAssetCard(
     type,
     label,
@@ -1088,18 +1132,37 @@
         </div>
 
 
-        <div class="asset-meta">
+<div class="asset-meta">
 
-          ${
-            asset
-              ? `<span>${escapeHtml(
-                  asset.filename ||
-                    ""
-                )}</span>`
-              : `<span>Not uploaded</span>`
-          }
+  ${
+    asset
+      ? `
+        <span>
+          ${escapeHtml(
+            asset.filename ||
+              ""
+          )}
+        </span>
 
-        </div>
+        <button
+          type="button"
+          class="copy-link-button"
+          data-copy-link="${escapeHtml(
+            getAssetPublicUrl(
+              type,
+              asset
+            )
+          )}"
+          title="Copy asset link"
+          aria-label="Copy asset link"
+        >
+          □
+        </button>
+      `
+      : `<span>Not uploaded</span>`
+  }
+
+</div>
 
 
         <div class="asset-actions">
@@ -1174,6 +1237,62 @@
       null
     );
   }
+
+  function getAssetPublicUrl(
+  type,
+  asset
+) {
+  const projectId =
+    state.currentProject.id;
+
+  let path;
+
+  if (
+    type.startsWith(
+      "screenshot-"
+    )
+  ) {
+    const slot =
+      type.slice(11);
+
+    const extension =
+      String(
+        asset.filename || "png"
+      )
+        .split(".")
+        .pop();
+
+    path =
+      `projects/${projectId}/` +
+      `screenshot/${slot}.${extension}`;
+
+  } else if (
+    type.startsWith(
+      "sub-logo-"
+    )
+  ) {
+    const slot =
+      type.slice(9);
+
+    const extension =
+      String(
+        asset.filename || "png"
+      )
+        .split(".")
+        .pop();
+
+    path =
+      `projects/${projectId}/` +
+      `sub-logo/${slot}.${extension}`;
+
+  } else {
+    path =
+      `projects/${projectId}/` +
+      `${asset.filename}`;
+  }
+
+  return `${ASSET_BASE_URL}/${path}`;
+}
 
   function openAssetDialog(
     type
