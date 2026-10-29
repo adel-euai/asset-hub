@@ -1066,145 +1066,153 @@
     );
   }
 
-  function renderAssetCard(
-    type,
-    label,
-    ratio,
-    size,
-    asset
-  ) {
-    const slotClass =
-      type.startsWith(
-        "screenshot-"
-      ) ||
-      type.startsWith(
-        "sub-logo-"
-      )
-        ? "asset-slot-card"
-        : "";
+function renderAssetCard(
+  type,
+  label,
+  ratio,
+  size,
+  asset
+) {
+  const slotClass =
+    type.startsWith(
+      "screenshot-"
+    ) ||
+    type.startsWith(
+      "sub-logo-"
+    )
+      ? "asset-slot-card"
+      : "";
 
-    return `
-      <article
-        class="asset-card ${slotClass} ${
-          size === "featured"
-            ? "asset-featured-card"
-            : ""
-        }"
-      >
+  const previewClass =
+    type.startsWith(
+      "screenshot-"
+    )
+      ? "screenshot"
+      : type.startsWith(
+          "sub-logo-"
+        )
+        ? "sub-logo"
+        : type;
 
-        <div class="asset-head">
+  return `
+    <article
+      class="asset-card ${slotClass} ${
+        size === "featured"
+          ? "asset-featured-card"
+          : ""
+      }"
+    >
 
-          <div>
+      <div class="asset-head">
 
-            <div class="eyebrow">
-              ${escapeHtml(
-                label
-              )}
-            </div>
+        <div>
 
-            <div class="ratio">
-              ${escapeHtml(
-                ratio
-              )}
-            </div>
-
+          <div class="eyebrow">
+            ${escapeHtml(
+              label
+            )}
           </div>
 
-          <span class="rev">
-            ${
-              asset
-                ? "Uploaded"
-                : "Not uploaded"
-            }
-          </span>
+          <div class="ratio">
+            ${escapeHtml(
+              ratio
+            )}
+          </div>
 
         </div>
 
+        <span class="rev">
+          ${
+            asset
+              ? "Uploaded"
+              : "Not uploaded"
+          }
+        </span>
 
-        <div
-          class="preview ${escapeHtml(
-            type
-          )}"
-          id="preview-${escapeHtml(
+      </div>
+
+      <div
+        class="preview ${escapeHtml(
+          previewClass
+        )}"
+        id="preview-${escapeHtml(
+          type
+        )}"
+      >
+        ${
+          asset
+            ? "<span>Loading preview…</span>"
+            : "<span>Empty</span>"
+        }
+      </div>
+
+      <div class="asset-meta">
+
+        ${
+          asset
+            ? `
+              <span>
+                ${escapeHtml(
+                  asset.filename ||
+                    ""
+                )}
+              </span>
+
+              <button
+                type="button"
+                class="copy-link-button"
+                data-copy-link="${escapeHtml(
+                  getAssetPublicUrl(
+                    type,
+                    asset
+                  )
+                )}"
+                title="Copy asset link"
+                aria-label="Copy asset link"
+              >
+                □
+              </button>
+            `
+            : `<span>Not uploaded</span>`
+        }
+
+      </div>
+
+      <div class="asset-actions">
+
+        <button
+          class="primary small"
+          data-upload="${escapeHtml(
             type
           )}"
         >
           ${
             asset
-              ? "<span>Loading preview…</span>"
-              : "<span>Empty</span>"
+              ? "Replace"
+              : "Upload"
           }
-        </div>
+        </button>
 
+        ${
+          asset
+            ? `
+              <button
+                class="danger small"
+                data-delete="${escapeHtml(
+                  type
+                )}"
+              >
+                Delete
+              </button>
+            `
+            : ""
+        }
 
-        <div class="asset-meta">
+      </div>
 
-          ${
-            asset
-              ? `
-                <span>
-                  ${escapeHtml(
-                    asset.filename ||
-                      ""
-                  )}
-                </span>
-
-                <button
-                  type="button"
-                  class="copy-link-button"
-                  data-copy-link="${escapeHtml(
-                    getAssetPublicUrl(
-                      type,
-                      asset
-                    )
-                  )}"
-                  title="Copy asset link"
-                  aria-label="Copy asset link"
-                >
-                  □
-                </button>
-              `
-              : `<span>Not uploaded</span>`
-          }
-
-        </div>
-
-
-        <div class="asset-actions">
-
-          <button
-            class="primary small"
-            data-upload="${escapeHtml(
-              type
-            )}"
-          >
-            ${
-              asset
-                ? "Replace"
-                : "Upload"
-            }
-          </button>
-
-          ${
-            asset
-              ? `
-                <button
-                  class="danger small"
-                  data-delete="${escapeHtml(
-                    type
-                  )}"
-                >
-                  Delete
-                </button>
-              `
-              : ""
-          }
-
-        </div>
-
-      </article>
-    `;
-  }
+    </article>
+  `;
+}
 
   function getAsset(type) {
     const assets =
