@@ -563,7 +563,11 @@ dialog::backdrop {
   border-radius: 15px;
 }
 
-.sub-logo-slot-grid .preview {
+.sub-logo-slot-grid .preview.sub-logo {
+  aspect-ratio: 1 / 1;
+  width: 100%;
+  min-height: 0;
+  height: auto;
   margin: 8px 0;
   border-radius: 10px;
 }
