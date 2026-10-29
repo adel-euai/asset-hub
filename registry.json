@@ -88,7 +88,12 @@
           "extension": "png",
           "updatedAt": "2026-10-29T15:39:14.706Z"
         },
-        "logo": null,
+        "logo": {
+          "filename": "logo.png",
+          "contentType": "image/png",
+          "extension": "png",
+          "updatedAt": "2026-10-29T15:39:56.664Z"
+        },
         "og-image": {
           "filename": "og-image.png",
           "contentType": "image/png",
