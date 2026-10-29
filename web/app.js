@@ -1150,7 +1150,7 @@
     ) {
       return (
         assets.screenshots?.[
-          type.slice(12)
+          type.slice(11)
         ] || null
       );
     }
