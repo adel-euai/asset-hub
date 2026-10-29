@@ -70,6 +70,19 @@
           }
         }
       }
+    },
+    "trade-suite": {
+      "id": "trade-suite",
+      "name": "Adel | Trade Suite",
+      "createdAt": "2026-10-29T15:32:25.213Z",
+      "assets": {
+        "banner": null,
+        "cover": null,
+        "logo": null,
+        "og-image": null,
+        "screenshots": {},
+        "sub-logos": {}
+      }
     }
   }
 }
