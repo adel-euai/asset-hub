@@ -18,7 +18,12 @@
       "name": "Adel | Trading Journal",
       "createdAt": "2026-10-29T13:55:47.959Z",
       "assets": {
-        "banner": null,
+        "banner": {
+          "filename": "banner.png",
+          "contentType": "image/png",
+          "extension": "png",
+          "updatedAt": "2026-10-29T13:57:03.063Z"
+        },
         "cover": null,
         "logo": null,
         "og-image": null,
