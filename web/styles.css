@@ -448,18 +448,58 @@ dialog::backdrop {
   margin-top: 24px;
 }
 
-/* Screenshot & Sub Logo Layout */
+/* =========================================
+   Asset Layout
+   ========================================= */
 
+.asset-fixed-layout,
 .asset-slot-grid {
+  width: 100%;
+  box-sizing: border-box;
+}
+
+
+/* =========================================
+   Fixed Assets
+   Banner + Logo | Cover + OG Image
+   ========================================= */
+
+.asset-fixed-layout {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 18px;
+  margin-top: 18px;
+}
+
+.asset-fixed-column {
+  display: grid;
+  gap: 18px;
+  min-width: 0;
+}
+
+.asset-fixed-column .asset-card {
+  width: 100%;
+  box-sizing: border-box;
+}
+
+
+/* =========================================
+   Screenshots
+   3 × 3
+   ========================================= */
+
+.screenshot-slot-grid {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: 14px;
+  gap: 18px;
   margin-top: 18px;
 }
 
 .asset-slot-card {
+  min-width: 0;
   padding: 14px;
   border-radius: 18px;
+  box-sizing: border-box;
 }
 
 .asset-slot-card .preview {
@@ -498,12 +538,15 @@ dialog::backdrop {
 }
 
 
-/* Sub Logos */
+/* =========================================
+   Sub Logos
+   9 columns × 11 rows
+   ========================================= */
 
 .sub-logo-slot-grid {
   display: grid;
-  grid-template-columns: repeat(6, minmax(0, 1fr));
-  gap: 10px;
+  grid-template-columns: repeat(9, minmax(0, 1fr));
+  gap: 12px;
   margin-top: 18px;
 }
 
@@ -515,6 +558,10 @@ dialog::backdrop {
 .sub-logo-slot-grid .preview {
   margin: 8px 0;
   border-radius: 10px;
+}
+
+.sub-logo-slot-grid .asset-head {
+  gap: 5px;
 }
 
 .sub-logo-slot-grid .asset-head .eyebrow {
@@ -539,11 +586,33 @@ dialog::backdrop {
 }
 
 
-/* Responsive */
+/* =========================================
+   Responsive
+   ========================================= */
 
 @media (max-width: 900px) {
 
-  .asset-slot-grid {
+  .asset-fixed-layout {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .screenshot-slot-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .sub-logo-slot-grid {
+    grid-template-columns: repeat(6, minmax(0, 1fr));
+  }
+}
+
+
+@media (max-width: 680px) {
+
+  .asset-fixed-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .screenshot-slot-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
@@ -552,9 +621,10 @@ dialog::backdrop {
   }
 }
 
-@media (max-width: 560px) {
 
-  .asset-slot-grid {
+@media (max-width: 480px) {
+
+  .screenshot-slot-grid {
     grid-template-columns: 1fr;
   }
 

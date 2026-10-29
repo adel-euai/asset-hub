@@ -867,8 +867,42 @@
           </div>
         </div>
 
-        <div class="asset-grid-secondary">
-          ${fixedCards}
+        <div class="asset-fixed-layout">
+          <div class="asset-fixed-column">
+            ${renderAssetCard(
+              "banner",
+              "Banner",
+              "4 × 1",
+              "featured",
+              assets.banner || null
+            )}
+
+            ${renderAssetCard(
+              "logo",
+              "Logo",
+              "1 × 1",
+              "square",
+              assets.logo || null
+            )}
+          </div>
+
+          <div class="asset-fixed-column">
+            ${renderAssetCard(
+              "cover",
+              "Cover",
+              "1.9 × 1",
+              "wide",
+              assets.cover || null
+            )}
+
+            ${renderAssetCard(
+              "og-image",
+              "OG Image",
+              "1.9 × 1",
+              "wide",
+              assets["og-image"] || null
+            )}
+          </div>
         </div>
 
       </section>
@@ -894,9 +928,9 @@
 
         </div>
 
-        <div class="asset-slot-grid">
-          ${screenshotCards}
-        </div>
+      <div class="asset-slot-grid screenshot-slot-grid">
+        ${screenshotCards}
+      </div>
 
       </section>
 
@@ -921,9 +955,9 @@
 
         </div>
 
-        <div class="sub-logo-slot-grid">
-          ${subLogoCards}
-        </div>
+      <div class="asset-slot-grid sub-logo-slot-grid">
+        ${subLogoCards}
+      </div>
 
       </section>
     `;
@@ -993,6 +1027,7 @@
     size,
     asset
   ) {
+    
     const slotClass =
       type.startsWith("screenshot-") ||
       type.startsWith("sub-logo-")
