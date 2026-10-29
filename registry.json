@@ -70,6 +70,52 @@
           }
         }
       }
+    },
+    "trade-suite": {
+      "id": "trade-suite",
+      "name": "Adel | Trade Suite",
+      "createdAt": "2026-10-29T15:32:25.213Z",
+      "assets": {
+        "banner": {
+          "filename": "banner.png",
+          "contentType": "image/png",
+          "extension": "png",
+          "updatedAt": "2026-10-29T15:33:00.437Z"
+        },
+        "cover": {
+          "filename": "cover.png",
+          "contentType": "image/png",
+          "extension": "png",
+          "updatedAt": "2026-10-29T15:39:14.706Z"
+        },
+        "logo": {
+          "filename": "logo.png",
+          "contentType": "image/png",
+          "extension": "png",
+          "updatedAt": "2026-10-29T15:39:56.664Z"
+        },
+        "og-image": {
+          "filename": "og-image.png",
+          "contentType": "image/png",
+          "extension": "png",
+          "updatedAt": "2026-10-29T15:34:20.438Z"
+        },
+        "screenshots": {
+          "1": {
+            "filename": "1.png",
+            "contentType": "image/png",
+            "extension": "png",
+            "updatedAt": "2026-10-29T15:34:44.399Z"
+          },
+          "2": {
+            "filename": "2.png",
+            "contentType": "image/png",
+            "extension": "png",
+            "updatedAt": "2026-10-29T15:38:33.370Z"
+          }
+        },
+        "sub-logos": {}
+      }
     }
   }
 }
