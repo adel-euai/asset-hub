@@ -76,7 +76,12 @@
       "name": "Adel | Trade Suite",
       "createdAt": "2026-10-29T15:32:25.213Z",
       "assets": {
-        "banner": null,
+        "banner": {
+          "filename": "banner.png",
+          "contentType": "image/png",
+          "extension": "png",
+          "updatedAt": "2026-10-29T15:33:00.437Z"
+        },
         "cover": null,
         "logo": null,
         "og-image": null,
