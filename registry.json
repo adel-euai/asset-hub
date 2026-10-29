@@ -42,7 +42,14 @@
           "extension": "png",
           "updatedAt": "2026-10-29T14:02:14.545Z"
         },
-        "screenshots": {},
+        "screenshots": {
+          "1": {
+            "filename": "1.png",
+            "contentType": "image/png",
+            "extension": "png",
+            "updatedAt": "2026-10-29T14:03:51.881Z"
+          }
+        },
         "sub-logos": {}
       }
     }
