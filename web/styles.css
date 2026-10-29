@@ -447,3 +447,118 @@ dialog::backdrop {
   gap: 10px;
   margin-top: 24px;
 }
+
+/* Screenshot & Sub Logo Layout */
+
+.asset-slot-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 14px;
+  margin-top: 18px;
+}
+
+.asset-slot-card {
+  padding: 14px;
+  border-radius: 18px;
+}
+
+.asset-slot-card .preview {
+  margin: 12px 0 10px;
+  border-radius: 12px;
+}
+
+.asset-slot-card .asset-head {
+  gap: 8px;
+}
+
+.asset-slot-card .asset-head .eyebrow {
+  font-size: 10px;
+}
+
+.asset-slot-card .ratio {
+  font-size: 11px;
+}
+
+.asset-slot-card .asset-meta {
+  min-height: 18px;
+  margin-bottom: 10px;
+  font-size: 11px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.asset-slot-card .asset-actions {
+  gap: 6px;
+}
+
+.asset-slot-card .asset-actions button {
+  padding: 7px 10px;
+  font-size: 11px;
+}
+
+
+/* Sub Logos */
+
+.sub-logo-slot-grid {
+  display: grid;
+  grid-template-columns: repeat(6, minmax(0, 1fr));
+  gap: 10px;
+  margin-top: 18px;
+}
+
+.sub-logo-slot-grid .asset-slot-card {
+  padding: 10px;
+  border-radius: 15px;
+}
+
+.sub-logo-slot-grid .preview {
+  margin: 8px 0;
+  border-radius: 10px;
+}
+
+.sub-logo-slot-grid .asset-head .eyebrow {
+  font-size: 9px;
+}
+
+.sub-logo-slot-grid .ratio {
+  font-size: 10px;
+}
+
+.sub-logo-slot-grid .asset-meta {
+  display: none;
+}
+
+.sub-logo-slot-grid .asset-actions {
+  justify-content: center;
+}
+
+.sub-logo-slot-grid .asset-actions button {
+  padding: 6px 8px;
+  font-size: 10px;
+}
+
+
+/* Responsive */
+
+@media (max-width: 900px) {
+
+  .asset-slot-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .sub-logo-slot-grid {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 560px) {
+
+  .asset-slot-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .sub-logo-slot-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}

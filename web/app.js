@@ -894,7 +894,7 @@
 
         </div>
 
-        <div class="asset-grid-secondary">
+        <div class="asset-slot-grid">
           ${screenshotCards}
         </div>
 
@@ -921,7 +921,7 @@
 
         </div>
 
-        <div class="asset-grid-secondary">
+        <div class="sub-logo-slot-grid">
           ${subLogoCards}
         </div>
 
@@ -993,9 +993,15 @@
     size,
     asset
   ) {
+    const slotClass =
+      type.startsWith("screenshot-") ||
+      type.startsWith("sub-logo-")
+        ? "asset-slot-card"
+        : "";
+
     return `
       <article
-        class="asset-card ${
+        class="asset-card ${slotClass} ${
           size === "featured"
             ? "asset-featured-card"
             : ""
