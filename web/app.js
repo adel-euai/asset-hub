@@ -6,7 +6,7 @@
     "https://asset-hub.adel-euai.workers.dev";
 
   const ASSET_BASE_URL =
-  "https://adel-euai.github.io/asset-hub";
+    "https://adel-euai.github.io/asset-hub";
 
   const state = {
     projects: [],
@@ -16,7 +16,8 @@
     pendingPreviewUrl: null
   };
 
-  const $ = (id) => document.getElementById(id);
+  const $ = (id) =>
+    document.getElementById(id);
 
   const views = {
     login: $("loginView"),
@@ -24,10 +25,13 @@
     project: $("projectView")
   };
 
-  $("legalAgreement")?.addEventListener("change", () => {
-    $("loginButton").disabled =
-      !$("legalAgreement").checked;
-  });
+  $("legalAgreement")?.addEventListener(
+    "change",
+    () => {
+      $("loginButton").disabled =
+        !$("legalAgreement").checked;
+    }
+  );
 
   $("loginForm")?.addEventListener(
     "submit",
@@ -777,26 +781,6 @@
       ]
     ];
 
-    const fixedCards =
-      definitions
-        .map(
-          ([
-            type,
-            label,
-            ratio,
-            size
-          ]) =>
-            renderAssetCard(
-              type,
-              label,
-              ratio,
-              size,
-              assets[type] ||
-                null
-            )
-        )
-        .join("");
-
     const screenshots =
       Array.from(
         {
@@ -871,7 +855,9 @@
         </div>
 
         <div class="asset-fixed-layout">
+
           <div class="asset-fixed-column">
+
             ${renderAssetCard(
               "banner",
               "Banner",
@@ -887,9 +873,11 @@
               "square",
               assets.logo || null
             )}
+
           </div>
 
           <div class="asset-fixed-column">
+
             ${renderAssetCard(
               "cover",
               "Cover",
@@ -905,7 +893,9 @@
               "wide",
               assets["og-image"] || null
             )}
+
           </div>
+
         </div>
 
       </section>
@@ -916,6 +906,7 @@
         <div class="section-heading">
 
           <div>
+
             <div class="eyebrow">
               SCREENSHOTS
             </div>
@@ -927,13 +918,14 @@
             <p>
               Up to 9 screenshots · 1.9 × 1
             </p>
+
           </div>
 
         </div>
 
-      <div class="asset-slot-grid screenshot-slot-grid">
-        ${screenshotCards}
-      </div>
+        <div class="asset-slot-grid screenshot-slot-grid">
+          ${screenshotCards}
+        </div>
 
       </section>
 
@@ -943,6 +935,7 @@
         <div class="section-heading">
 
           <div>
+
             <div class="eyebrow">
               SUB LOGOS
             </div>
@@ -952,18 +945,66 @@
             </h3>
 
             <p>
-              Up to 99 sub logos · 1 × 1
+              Up to 60 sub logos · 1 × 1
             </p>
+
           </div>
 
         </div>
 
-      <div class="asset-slot-grid sub-logo-slot-grid">
-        ${subLogoCards}
-      </div>
+        <div class="asset-slot-grid sub-logo-slot-grid">
+          ${subLogoCards}
+        </div>
 
       </section>
     `;
+
+    /*
+     * IMPORTANT:
+     * These buttons are created dynamically by renderProject().
+     * Therefore their listeners must be attached AFTER innerHTML.
+     */
+
+    document
+      .querySelectorAll(
+        "[data-copy-link]"
+      )
+      .forEach(
+        (button) => {
+          button.addEventListener(
+            "click",
+            async () => {
+              const url =
+                button.dataset
+                  .copyLink;
+
+              try {
+                await navigator.clipboard.writeText(
+                  url
+                );
+
+                const original =
+                  button.textContent;
+
+                button.textContent =
+                  "✓";
+
+                setTimeout(
+                  () => {
+                    button.textContent =
+                      original;
+                  },
+                  1200
+                );
+
+              } catch {
+                button.textContent =
+                  "!";
+              }
+            }
+          );
+        }
+      );
 
     document
       .querySelectorAll(
@@ -1003,10 +1044,12 @@
       ...definitions.map(
         ([type]) => type
       ),
+
       ...screenshots.map(
         (slot) =>
           `screenshot-${slot}`
       ),
+
       ...subLogos.map(
         (slot) =>
           `sub-logo-${slot}`
@@ -1023,47 +1066,6 @@
     );
   }
 
-  document
-  .querySelectorAll(
-    "[data-copy-link]"
-  )
-  .forEach(
-    (button) => {
-      button.addEventListener(
-        "click",
-        async () => {
-          const url =
-            button.dataset
-              .copyLink;
-
-          try {
-            await navigator.clipboard.writeText(
-              url
-            );
-
-            const original =
-              button.textContent;
-
-            button.textContent =
-              "✓";
-
-            setTimeout(
-              () => {
-                button.textContent =
-                  original;
-              },
-              1200
-            );
-
-          } catch {
-            button.textContent =
-              "!";
-          }
-        }
-      );
-    }
-  );
-
   function renderAssetCard(
     type,
     label,
@@ -1071,10 +1073,13 @@
     size,
     asset
   ) {
-    
     const slotClass =
-      type.startsWith("screenshot-") ||
-      type.startsWith("sub-logo-")
+      type.startsWith(
+        "screenshot-"
+      ) ||
+      type.startsWith(
+        "sub-logo-"
+      )
         ? "asset-slot-card"
         : "";
 
@@ -1132,37 +1137,37 @@
         </div>
 
 
-<div class="asset-meta">
+        <div class="asset-meta">
 
-  ${
-    asset
-      ? `
-        <span>
-          ${escapeHtml(
-            asset.filename ||
-              ""
-          )}
-        </span>
+          ${
+            asset
+              ? `
+                <span>
+                  ${escapeHtml(
+                    asset.filename ||
+                      ""
+                  )}
+                </span>
 
-        <button
-          type="button"
-          class="copy-link-button"
-          data-copy-link="${escapeHtml(
-            getAssetPublicUrl(
-              type,
-              asset
-            )
-          )}"
-          title="Copy asset link"
-          aria-label="Copy asset link"
-        >
-          □
-        </button>
-      `
-      : `<span>Not uploaded</span>`
-  }
+                <button
+                  type="button"
+                  class="copy-link-button"
+                  data-copy-link="${escapeHtml(
+                    getAssetPublicUrl(
+                      type,
+                      asset
+                    )
+                  )}"
+                  title="Copy asset link"
+                  aria-label="Copy asset link"
+                >
+                  □
+                </button>
+              `
+              : `<span>Not uploaded</span>`
+          }
 
-</div>
+        </div>
 
 
         <div class="asset-actions">
@@ -1239,60 +1244,60 @@
   }
 
   function getAssetPublicUrl(
-  type,
-  asset
-) {
-  const projectId =
-    state.currentProject.id;
-
-  let path;
-
-  if (
-    type.startsWith(
-      "screenshot-"
-    )
+    type,
+    asset
   ) {
-    const slot =
-      type.slice(11);
+    const projectId =
+      state.currentProject.id;
 
-    const extension =
-      String(
-        asset.filename || "png"
+    let path;
+
+    if (
+      type.startsWith(
+        "screenshot-"
       )
-        .split(".")
-        .pop();
+    ) {
+      const slot =
+        type.slice(11);
 
-    path =
-      `projects/${projectId}/` +
-      `screenshot/${slot}.${extension}`;
+      const extension =
+        String(
+          asset.filename || "png"
+        )
+          .split(".")
+          .pop();
 
-  } else if (
-    type.startsWith(
-      "sub-logo-"
-    )
-  ) {
-    const slot =
-      type.slice(9);
+      path =
+        `projects/${projectId}/` +
+        `screenshot/${slot}.${extension}`;
 
-    const extension =
-      String(
-        asset.filename || "png"
+    } else if (
+      type.startsWith(
+        "sub-logo-"
       )
-        .split(".")
-        .pop();
+    ) {
+      const slot =
+        type.slice(9);
 
-    path =
-      `projects/${projectId}/` +
-      `sub-logo/${slot}.${extension}`;
+      const extension =
+        String(
+          asset.filename || "png"
+        )
+          .split(".")
+          .pop();
 
-  } else {
-    path =
-      `projects/${projectId}/` +
-      `${asset.filename}`;
+      path =
+        `projects/${projectId}/` +
+        `sub-logo/${slot}.${extension}`;
+
+    } else {
+      path =
+        `projects/${projectId}/` +
+        `${asset.filename}`;
+    }
+
+    return `${ASSET_BASE_URL}/${path}`;
   }
-
-  return `${ASSET_BASE_URL}/${path}`;
-}
 
   function openAssetDialog(
     type
@@ -1379,7 +1384,7 @@
       )
     ) {
       return `Screenshot ${type.slice(
-        12
+        11
       )}`;
     }
 

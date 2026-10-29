@@ -221,6 +221,7 @@ button:disabled {
 .asset-section:last-child {
   margin-bottom: 0;
 }
+
 .asset-card {
   padding: 18px;
 }
@@ -456,6 +457,7 @@ dialog::backdrop {
   margin-top: 24px;
 }
 
+
 /* =========================================
    Asset Layout
    ========================================= */
@@ -548,7 +550,7 @@ dialog::backdrop {
 
 /* =========================================
    Sub Logos
-   9 columns × 11 rows
+   6 columns × 10 rows
    ========================================= */
 
 .sub-logo-slot-grid {
@@ -561,15 +563,6 @@ dialog::backdrop {
 .sub-logo-slot-grid .asset-slot-card {
   padding: 10px;
   border-radius: 15px;
-}
-
-.sub-logo-slot-grid .preview.sub-logo {
-  aspect-ratio: 1 / 1;
-  width: 100%;
-  min-height: 0;
-  height: auto;
-  margin: 8px 0;
-  border-radius: 10px;
 }
 
 .sub-logo-slot-grid .preview {
@@ -602,7 +595,21 @@ dialog::backdrop {
 }
 
 .sub-logo-slot-grid .asset-meta {
-  display: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  min-height: 24px;
+  margin-bottom: 8px;
+  font-size: 10px;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.sub-logo-slot-grid .asset-meta > span {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 
 .sub-logo-slot-grid .asset-actions {
@@ -612,6 +619,40 @@ dialog::backdrop {
 .sub-logo-slot-grid .asset-actions button {
   padding: 6px 8px;
   font-size: 10px;
+}
+
+
+/* =========================================
+   Copy Asset Link
+   ========================================= */
+
+.copy-link-button {
+  width: 24px;
+  height: 24px;
+  flex: 0 0 24px;
+  padding: 0;
+  margin: 0;
+  display: inline-grid;
+  place-items: center;
+  border: 1px solid #d8d8d4;
+  border-radius: 6px;
+  background: #f4f4f1;
+  color: #666;
+  cursor: pointer;
+  font-size: 12px;
+  line-height: 1;
+  vertical-align: middle;
+}
+
+.copy-link-button:hover {
+  background: #e9e9e5;
+  color: #222;
+}
+
+.copy-link-button.copied {
+  background: #222;
+  color: #fff;
+  border-color: #222;
 }
 
 
@@ -660,27 +701,4 @@ dialog::backdrop {
   .sub-logo-slot-grid {
     grid-template-columns: repeat(3, minmax(0, 1fr));
   }
-}
-
-
-.copy-link-button {
-  width: 24px;
-  height: 24px;
-  padding: 0;
-  margin-left: 6px;
-  display: inline-grid;
-  place-items: center;
-  border: 1px solid #d8d8d4;
-  border-radius: 6px;
-  background: #f4f4f1;
-  color: #666;
-  cursor: pointer;
-  font-size: 12px;
-  line-height: 1;
-  vertical-align: middle;
-}
-
-.copy-link-button:hover {
-  background: #e9e9e5;
-  color: #222;
 }
