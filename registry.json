@@ -56,7 +56,14 @@
             "updatedAt": "2026-10-29T14:04:11.961Z"
           }
         },
-        "sub-logos": {}
+        "sub-logos": {
+          "1": {
+            "filename": "1.png",
+            "contentType": "image/png",
+            "extension": "png",
+            "updatedAt": "2026-10-29T14:36:19.597Z"
+          }
+        }
       }
     }
   }
