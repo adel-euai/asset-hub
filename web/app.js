@@ -806,7 +806,7 @@
     const subLogos =
       Array.from(
         {
-          length: 99
+          length: 60
         },
         (_, index) =>
           index + 1
