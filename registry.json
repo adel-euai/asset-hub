@@ -1,18 +1,5 @@
 {
   "projects": {
-    "asset-hub": {
-      "id": "asset-hub",
-      "name": "Adel | Asset Hub",
-      "createdAt": "2026-10-29T06:29:15.055Z",
-      "assets": {
-        "banner": null,
-        "cover": null,
-        "logo": null,
-        "og-image": null,
-        "screenshots": {},
-        "sub-logos": {}
-      }
-    },
     "trading-journal": {
       "id": "trading-journal",
       "name": "Adel | Trading Journal",
