@@ -24,7 +24,12 @@
           "extension": "png",
           "updatedAt": "2026-10-29T13:57:03.063Z"
         },
-        "cover": null,
+        "cover": {
+          "filename": "cover.png",
+          "contentType": "image/png",
+          "extension": "png",
+          "updatedAt": "2026-10-29T14:01:29.129Z"
+        },
         "logo": null,
         "og-image": null,
         "screenshots": {},
