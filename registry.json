@@ -269,6 +269,19 @@
         "screenshots": {},
         "sub-logos": {}
       }
+    },
+    "auth-service": {
+      "id": "auth-service",
+      "name": "Adel | Auth Service",
+      "createdAt": "2026-10-30T19:10:21.053Z",
+      "assets": {
+        "banner": null,
+        "cover": null,
+        "logo": null,
+        "og-image": null,
+        "screenshots": {},
+        "sub-logos": {}
+      }
     }
   }
 }
