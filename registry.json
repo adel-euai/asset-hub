@@ -134,6 +134,19 @@
         "screenshots": {},
         "sub-logos": {}
       }
+    },
+    "brand-registry": {
+      "id": "brand-registry",
+      "name": "Adel | Brand Registry",
+      "createdAt": "2026-10-30T18:58:33.326Z",
+      "assets": {
+        "banner": null,
+        "cover": null,
+        "logo": null,
+        "og-image": null,
+        "screenshots": {},
+        "sub-logos": {}
+      }
     }
   }
 }
