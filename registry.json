@@ -655,7 +655,12 @@
       "name": "Adel | Dog Parkour",
       "createdAt": "2026-10-30T19:09:21.123Z",
       "assets": {
-        "banner": null,
+        "banner": {
+          "filename": "banner.jpg",
+          "contentType": "image/jpeg",
+          "extension": "jpg",
+          "updatedAt": "2026-10-30T20:25:13.015Z"
+        },
         "cover": null,
         "logo": null,
         "og-image": null,
