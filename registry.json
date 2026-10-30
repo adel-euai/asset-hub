@@ -62,12 +62,6 @@
           }
         },
         "sub-logos": {
-          "1": {
-            "filename": "1.png",
-            "contentType": "image/png",
-            "extension": "png",
-            "updatedAt": "2026-10-29T14:36:19.597Z"
-          },
           "2": {
             "filename": "2.png",
             "contentType": "image/png",
