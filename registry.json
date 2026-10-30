@@ -217,6 +217,19 @@
         "screenshots": {},
         "sub-logos": {}
       }
+    },
+    "exhibition-space": {
+      "id": "exhibition-space",
+      "name": "Adel | Exhibition Space",
+      "createdAt": "2026-10-30T19:08:43.952Z",
+      "assets": {
+        "banner": null,
+        "cover": null,
+        "logo": null,
+        "og-image": null,
+        "screenshots": {},
+        "sub-logos": {}
+      }
     }
   }
 }
