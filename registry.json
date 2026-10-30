@@ -256,6 +256,19 @@
         "screenshots": {},
         "sub-logos": {}
       }
+    },
+    "dev-ecosystem": {
+      "id": "dev-ecosystem",
+      "name": "Adel | Dev Ecosystem",
+      "createdAt": "2026-10-30T19:09:51.422Z",
+      "assets": {
+        "banner": null,
+        "cover": null,
+        "logo": null,
+        "og-image": null,
+        "screenshots": {},
+        "sub-logos": {}
+      }
     }
   }
 }
