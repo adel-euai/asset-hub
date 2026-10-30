@@ -991,7 +991,12 @@
       "name": "Adel | Archive Index",
       "createdAt": "2026-10-30T19:12:27.902Z",
       "assets": {
-        "banner": null,
+        "banner": {
+          "filename": "banner.png",
+          "contentType": "image/png",
+          "extension": "png",
+          "updatedAt": "2026-10-30T20:49:16.612Z"
+        },
         "cover": null,
         "logo": null,
         "og-image": null,
