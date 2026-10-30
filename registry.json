@@ -183,7 +183,14 @@
             "updatedAt": "2026-10-30T19:45:05.720Z"
           }
         },
-        "sub-logos": {}
+        "sub-logos": {
+          "1": {
+            "filename": "1.png",
+            "contentType": "image/png",
+            "extension": "png",
+            "updatedAt": "2026-10-30T19:46:40.541Z"
+          }
+        }
       }
     },
     "trading-setup-optimizer": {
