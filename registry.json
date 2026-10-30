@@ -165,6 +165,19 @@
         "screenshots": {},
         "sub-logos": {}
       }
+    },
+    "trading-setup-optimizer": {
+      "id": "trading-setup-optimizer",
+      "name": "Adel | Trading Setup Optimizer",
+      "createdAt": "2026-10-30T19:07:32.648Z",
+      "assets": {
+        "banner": null,
+        "cover": null,
+        "logo": null,
+        "og-image": null,
+        "screenshots": {},
+        "sub-logos": {}
+      }
     }
   }
 }
