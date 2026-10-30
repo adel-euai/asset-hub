@@ -304,7 +304,12 @@
       "name": "Adel | Audio Lab",
       "createdAt": "2026-10-30T19:07:52.009Z",
       "assets": {
-        "banner": null,
+        "banner": {
+          "filename": "banner.png",
+          "contentType": "image/png",
+          "extension": "png",
+          "updatedAt": "2026-10-30T19:56:34.917Z"
+        },
         "cover": null,
         "logo": null,
         "og-image": null,
