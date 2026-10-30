@@ -811,7 +811,12 @@
       "assets": {
         "banner": null,
         "cover": null,
-        "logo": null,
+        "logo": {
+          "filename": "logo.png",
+          "contentType": "image/png",
+          "extension": "png",
+          "updatedAt": "2026-10-30T20:37:49.120Z"
+        },
         "og-image": null,
         "screenshots": {},
         "sub-logos": {}
