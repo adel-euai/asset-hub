@@ -116,7 +116,12 @@
       "createdAt": "2026-10-30T18:57:28.989Z",
       "assets": {
         "banner": null,
-        "cover": null,
+        "cover": {
+          "filename": "cover.png",
+          "contentType": "image/png",
+          "extension": "png",
+          "updatedAt": "2026-10-30T21:44:46.698Z"
+        },
         "logo": {
           "filename": "logo.png",
           "contentType": "image/png",
