@@ -497,7 +497,12 @@
       "name": "Adel | Exhibition Space",
       "createdAt": "2026-10-30T19:08:43.952Z",
       "assets": {
-        "banner": null,
+        "banner": {
+          "filename": "banner.png",
+          "contentType": "image/png",
+          "extension": "png",
+          "updatedAt": "2026-10-30T20:12:29.954Z"
+        },
         "cover": null,
         "logo": null,
         "og-image": null,
