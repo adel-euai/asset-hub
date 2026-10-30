@@ -347,6 +347,19 @@
         "screenshots": {},
         "sub-logos": {}
       }
+    },
+    "archive-index": {
+      "id": "archive-index",
+      "name": "Adel | Archive Index",
+      "createdAt": "2026-10-30T19:12:27.902Z",
+      "assets": {
+        "banner": null,
+        "cover": null,
+        "logo": null,
+        "og-image": null,
+        "screenshots": {},
+        "sub-logos": {}
+      }
     }
   }
 }
