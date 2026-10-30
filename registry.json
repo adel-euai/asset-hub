@@ -178,6 +178,19 @@
         "screenshots": {},
         "sub-logos": {}
       }
+    },
+    "audio-lab": {
+      "id": "audio-lab",
+      "name": "Adel | Audio Lab",
+      "createdAt": "2026-10-30T19:07:52.009Z",
+      "assets": {
+        "banner": null,
+        "cover": null,
+        "logo": null,
+        "og-image": null,
+        "screenshots": {},
+        "sub-logos": {}
+      }
     }
   }
 }
