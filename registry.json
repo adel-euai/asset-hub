@@ -877,7 +877,12 @@
           "updatedAt": "2026-10-30T20:41:43.442Z"
         },
         "cover": null,
-        "logo": null,
+        "logo": {
+          "filename": "logo.png",
+          "contentType": "image/png",
+          "extension": "png",
+          "updatedAt": "2026-10-30T20:42:05.967Z"
+        },
         "og-image": null,
         "screenshots": {},
         "sub-logos": {}
