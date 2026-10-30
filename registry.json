@@ -667,7 +667,12 @@
           "extension": "jpg",
           "updatedAt": "2026-10-30T20:26:07.367Z"
         },
-        "logo": null,
+        "logo": {
+          "filename": "logo.png",
+          "contentType": "image/png",
+          "extension": "png",
+          "updatedAt": "2026-10-30T21:23:15.636Z"
+        },
         "og-image": {
           "filename": "og-image.jpg",
           "contentType": "image/jpeg",
