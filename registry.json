@@ -230,6 +230,19 @@
         "screenshots": {},
         "sub-logos": {}
       }
+    },
+    "the-collection": {
+      "id": "the-collection",
+      "name": "Adel | The Collection",
+      "createdAt": "2026-10-30T19:08:57.343Z",
+      "assets": {
+        "banner": null,
+        "cover": null,
+        "logo": null,
+        "og-image": null,
+        "screenshots": {},
+        "sub-logos": {}
+      }
     }
   }
 }
