@@ -661,7 +661,12 @@
           "extension": "jpg",
           "updatedAt": "2026-10-30T20:25:13.015Z"
         },
-        "cover": null,
+        "cover": {
+          "filename": "cover.jpg",
+          "contentType": "image/jpeg",
+          "extension": "jpg",
+          "updatedAt": "2026-10-30T20:26:07.367Z"
+        },
         "logo": {
           "filename": "logo.jpg",
           "contentType": "image/jpeg",
