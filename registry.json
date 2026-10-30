@@ -152,6 +152,19 @@
         "screenshots": {},
         "sub-logos": {}
       }
+    },
+    "trading-hub": {
+      "id": "trading-hub",
+      "name": "Adel | Trading Hub",
+      "createdAt": "2026-10-30T19:06:54.613Z",
+      "assets": {
+        "banner": null,
+        "cover": null,
+        "logo": null,
+        "og-image": null,
+        "screenshots": {},
+        "sub-logos": {}
+      }
     }
   }
 }
