@@ -344,7 +344,12 @@
       "name": "Adel | Audio Hub",
       "createdAt": "2026-10-30T19:08:06.288Z",
       "assets": {
-        "banner": null,
+        "banner": {
+          "filename": "banner.jpg",
+          "contentType": "image/jpeg",
+          "extension": "jpg",
+          "updatedAt": "2026-10-30T19:59:06.954Z"
+        },
         "cover": null,
         "logo": null,
         "og-image": null,
