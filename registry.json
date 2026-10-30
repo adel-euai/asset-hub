@@ -837,7 +837,12 @@
       "name": "Adel | AI Foundation",
       "createdAt": "2026-10-30T19:11:39.886Z",
       "assets": {
-        "banner": null,
+        "banner": {
+          "filename": "banner.png",
+          "contentType": "image/png",
+          "extension": "png",
+          "updatedAt": "2026-10-30T20:39:22.949Z"
+        },
         "cover": null,
         "logo": null,
         "og-image": null,
