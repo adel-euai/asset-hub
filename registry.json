@@ -282,6 +282,19 @@
         "screenshots": {},
         "sub-logos": {}
       }
+    },
+    "license-management-system": {
+      "id": "license-management-system",
+      "name": "Adel | License Management System",
+      "createdAt": "2026-10-30T19:10:37.700Z",
+      "assets": {
+        "banner": null,
+        "cover": null,
+        "logo": null,
+        "og-image": null,
+        "screenshots": {},
+        "sub-logos": {}
+      }
     }
   }
 }
