@@ -243,6 +243,19 @@
         "screenshots": {},
         "sub-logos": {}
       }
+    },
+    "dog-parkour": {
+      "id": "dog-parkour",
+      "name": "Adel | Dog Parkour",
+      "createdAt": "2026-10-30T19:09:21.123Z",
+      "assets": {
+        "banner": null,
+        "cover": null,
+        "logo": null,
+        "og-image": null,
+        "screenshots": {},
+        "sub-logos": {}
+      }
     }
   }
 }
