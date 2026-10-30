@@ -191,6 +191,19 @@
         "screenshots": {},
         "sub-logos": {}
       }
+    },
+    "audio-hub": {
+      "id": "audio-hub",
+      "name": "Adel | Audio Hub",
+      "createdAt": "2026-10-30T19:08:06.288Z",
+      "assets": {
+        "banner": null,
+        "cover": null,
+        "logo": null,
+        "og-image": null,
+        "screenshots": {},
+        "sub-logos": {}
+      }
     }
   }
 }
