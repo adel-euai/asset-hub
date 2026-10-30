@@ -844,7 +844,12 @@
           "updatedAt": "2026-10-30T20:39:22.949Z"
         },
         "cover": null,
-        "logo": null,
+        "logo": {
+          "filename": "logo.png",
+          "contentType": "image/png",
+          "extension": "png",
+          "updatedAt": "2026-10-30T20:40:01.220Z"
+        },
         "og-image": null,
         "screenshots": {},
         "sub-logos": {}
