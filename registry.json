@@ -794,7 +794,12 @@
           "extension": "png",
           "updatedAt": "2026-10-30T20:35:40.730Z"
         },
-        "og-image": null,
+        "og-image": {
+          "filename": "og-image.png",
+          "contentType": "image/png",
+          "extension": "png",
+          "updatedAt": "2026-10-30T20:36:40.305Z"
+        },
         "screenshots": {},
         "sub-logos": {}
       }
