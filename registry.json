@@ -116,6 +116,19 @@
         },
         "sub-logos": {}
       }
+    },
+    "asset-hub": {
+      "id": "asset-hub",
+      "name": "Adel | Asset Hub",
+      "createdAt": "2026-10-30T18:57:28.989Z",
+      "assets": {
+        "banner": null,
+        "cover": null,
+        "logo": null,
+        "og-image": null,
+        "screenshots": {},
+        "sub-logos": {}
+      }
     }
   }
 }
