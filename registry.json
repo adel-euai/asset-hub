@@ -503,7 +503,12 @@
           "extension": "png",
           "updatedAt": "2026-10-30T20:12:29.954Z"
         },
-        "cover": null,
+        "cover": {
+          "filename": "cover.png",
+          "contentType": "image/png",
+          "extension": "png",
+          "updatedAt": "2026-10-30T20:13:24.687Z"
+        },
         "logo": {
           "filename": "logo.png",
           "contentType": "image/png",
