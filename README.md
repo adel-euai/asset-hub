@@ -1,92 +1,126 @@
-# Adel | Asset Hub
+# 📦 Adel | Asset Hub
 
-Private digital asset management system for Adel projects.
+This repository hosts the official development environment for **Adel | Asset Hub** — a centralized digital asset management system designed for organizing and maintaining visual assets across Adel projects.
 
-## Asset Types
+---
 
-Each project contains:
+## 📊 Status
 
-- Banner — 4 × 1
-- Cover — 1.9 × 1
-- Logo — 1 × 1
-- OG Image — 1.9 × 1
-- Screenshots — 1.9 × 1, up to 9
-- Sub Logos — 1 × 1, up to 99
+![Status](https://img.shields.io/badge/status-active-brightgreen)
+![Version](https://img.shields.io/badge/version-1.0.0-blue)
+![License](https://img.shields.io/badge/license-Proprietary-red)
 
-Assets are directly replaced. There is no revision, archive, or version history system.
+---
 
-## Architecture
+## Live Access
 
-Browser UI → Asset Hub Worker → Central Auth Service / Private GitHub Repository
+* **Launch Web App:** https://adel-asset-hub.pages.dev
 
-The GitHub token is never exposed to the browser.
+---
 
-## Configuration
+## 🧠 Product Vision
 
-Set these Cloudflare Worker secrets:
+A centralized asset management system focused on structured project asset organization, stable asset paths, controlled access, and consistent visual resources across Adel web applications.
 
-```text
-AUTH_SERVICE_URL
-AUTH_SERVICE_PROJECT
-GITHUB_TOKEN
-```
+Asset Hub is designed to provide a simple and reliable workflow for managing current project assets without introducing unnecessary archive or version-history complexity.
 
-The repository owner/name are configured in `wrangler.toml`.
+---
 
-## Development
+## 🛠 Tech Stack
 
-```bash
-npm install
-npx wrangler dev
-```
+- HTML5
+- CSS3 (Custom Design System)
+- Vanilla JavaScript
+- Cloudflare Workers
+- Central Auth Service
+- GitHub Repository API
+- GitHub-based Asset Storage
+- Server-side Authentication & Access Control
 
-## Deployment
+---
 
-```bash
-npx wrangler deploy
-```
-
-Then set the secrets:
-
-```bash
-npx wrangler secret put AUTH_SERVICE_URL
-npx wrangler secret put AUTH_SERVICE_PROJECT
-npx wrangler secret put GITHUB_TOKEN
-```
-
-## GitHub Permissions
-
-The GitHub token should have only the minimum repository permissions required for the private `asset-hub` repository, including repository contents read/write.
-
-## Repository Structure
-
-Each project's assets are stored using stable paths:
+## 📁 Project Structure
 
 ```text
-projects/
-└── project-name/
-    ├── banner.png
-    ├── cover.png
-    ├── logo.png
-    ├── og-image.png
-    ├── screenshot/
-    │   ├── 1.png
-    │   ├── 2.png
-    │   └── ...9.png
-    └── sub-logo/
-        ├── 1.png
-        ├── 2.png
-        └── ...99.png
+asset-hub/
+├── .gitignore              # Git Filter: Excludes sensitive & unnecessary files
+├── LICENSE.md              # Proprietary License (Copyright © 2026 Adel Mahmoudian)
+├── package.json            # Project & Worker Configuration
+├── README.md               # Project Documentation
+├── wrangler.toml           # Cloudflare Worker Configuration
+│
+├── worker/
+│   └── src/
+│       └── index.js        # Asset Hub Worker & API
+│
+└── web/
+    ├── index.html          # Main Web App Interface
+    ├── app.js              # Application Logic
+    └── style.css           # UI Styling System
 ```
 
-When an asset is replaced, the existing file is overwritten directly at the same path.
+---
 
-The file extension must remain unchanged when replacing an existing asset so that the public asset URL remains stable.
+## ⚙️ Key Features
 
-## Notes
+- 📦 Centralized Project Asset Management
+- 🖼️ Banner Management — 4 × 1
+- 🖼️ Cover Management — 1.9 × 1
+- 🎨 Logo Management — 1 × 1
+- 🌐 OG Image Management — 1.9 × 1
+- 📸 Screenshot Management — 2.25 × 1, up to 9
+- 🔷 Sub Logo Management — 1 × 1, up to 60
+- 🔄 Direct Asset Replacement
+- 🔗 Stable Asset Paths & Public URLs
+- 🔐 Centralized Authentication
+- 🛡️ Server-side GitHub Repository Access
+- 🔒 GitHub Token Protected on the Worker
+- 🗂️ Structured Project-based Asset Storage
+- 👁️ Asset Preview & Management Interface
 
-The login endpoint is proxied by the Worker to the existing Central Auth Service architecture. If the existing Auth Service uses a different exact request/response contract, update only the Worker authentication adapter; the UI and Asset Hub architecture remain unchanged.
+---
 
-The GitHub repository is private and all repository operations are performed server-side by the Worker.
+## 📸 Preview
 
-There is no archive, revision, or version-history system. Each project maintains only its current assets.
+![Asset Hub UI Preview](https://adel-euai.github.io/asset-hub/projects/asset-hub/screenshot/1.png)
+
+---
+
+## 👤 Author
+
+**Adel Mahmoudian**
+
+Process Engineer and Web App Developer
+
+---
+
+## 📞 Contact
+
+- Email: adel.euai@gmail.com
+- LinkedIn: https://www.linkedin.com/in/adel-euai
+- GitHub: https://github.com/Adel-EUAI
+- Website: https://adel-euai.github.io
+
+---
+
+## 📜 License
+
+This project is licensed under a Proprietary License.  
+See the `LICENSE.md` file for detailed information.
+
+---
+
+## 🔮 Future Roadmap
+
+- [ ] Additional asset type support
+- [ ] Enhanced asset validation
+- [ ] Improved project asset organization
+- [ ] Extended asset metadata management
+- [ ] Improved asset preview capabilities
+- [ ] Additional Adel application integrations
+
+---
+
+*Built to provide a structured and reliable asset infrastructure for Adel projects.*
+
+© 2026–Present Adel Mahmoudian. All Rights Reserved.
