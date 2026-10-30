@@ -749,3 +749,1481 @@ dialog::backdrop {
   object-fit: cover;
   object-position: center center;
 }
+
+
+
+.main-header {
+    position: relative;
+    width: 100%;
+    /*background-image: url('https://adel-euai.github.io/asset-hub/banner/audio-hub-banner.png');*/
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    display: flex;
+    justify-content: space-between;
+    align-items: top;
+    padding: 30px 50px 0px 50px;
+}
+
+
+.header-content {
+    position: relative;
+    z-index: 2;
+    flex: 1;
+}
+
+.gradient-text {
+    font-size: 2rem;
+    font-weight: 580;
+    text-transform: uppercase;
+    margin: 0;
+    display: inline-block;
+    background: linear-gradient(135deg, #ffffff, #c6c6c6);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: 20px;
+    opacity: 1 !important;
+}
+
+.app-logo {
+  z-index: 2;
+  height: 60px;
+  filter: drop-shadow(0 0 8px rgba(255, 255, 255, 0.9));
+  border-radius: 0px;
+  transition: transform 0.3s ease;
+  margin-left: 20px;
+  margin-top: 10px;
+  opacity: 1 !important;
+}
+
+.app-logo:hover {
+  transform: scale(1.1);
+}
+
+
+.nav-links {
+    position: relative;
+    z-index: 2;
+    margin: 15px 0px 0px 30px;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color:  #acacac !important; 
+    font-weight: 600;
+    transition: 0.3s;
+    opacity: 1 !important;
+}
+
+.nav-links a:hover {
+    color: #5f5f5f !important;
+}
+
+/*================================== FOOTER ========================================*/
+.footer {
+  background: #000000;
+  padding: 40px 20px 25px;
+  font-size: 14px;
+  color: #8b8f98;
+}
+
+.footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.footer-left {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  /*margin-top: 30px;*/
+  margin-bottom: 50px;
+}
+
+.footer-built {
+  color:  #ffffff;
+  line-height: 1;
+  display: flex;
+  align-items: center;
+  font-weight: 600;
+}
+
+.footer-logo {
+  height: 40px;
+  width: 40px;
+  filter: drop-shadow(0 0 8px rgba(255, 255, 255, 0.6));
+  border-radius: 0px;
+  transition: transform 0.3s ease;
+  object-fit: cover;
+}
+
+.footer-logo:hover {
+  transform: scale(1.05);
+}
+
+.footer-right {
+  display: flex;
+  align-items: center;   
+  gap: 10px;
+  /*margin-top: 30px;*/
+  margin-bottom: 50px;
+}
+
+.footer-right:hover .footer-logo {
+  transform: scale(1.05);
+  transition: 0.3s ease;
+}
+.footer-separator {
+color: #e0e0e0;
+}
+/*=============================== TRADE MARK ================================*/
+
+.tm-mark {
+    position: relative;
+    top: -15px;         
+    right: 8px;     
+    font-size: 20px;   
+    font-weight: normal;
+    color: #ffffff;    
+    opacity: 1;      
+}
+
+
+
+/* =========================================================
+   ASSET HUB — ELITE / LUXURY COVER
+   Safe visual override
+   No HTML / JS changes required
+   ========================================================= */
+
+:root {
+  color: #f3f3f1;
+  background: #070707;
+}
+
+/* =========================================================
+   GLOBAL COVER
+   ========================================================= */
+
+body {
+  background:
+    radial-gradient(
+      circle at 50% -12%,
+      rgba(255,255,255,.075),
+      transparent 34%
+    ),
+    radial-gradient(
+      circle at 92% 18%,
+      rgba(255,255,255,.025),
+      transparent 28%
+    ),
+    radial-gradient(
+      circle at 8% 70%,
+      rgba(255,255,255,.018),
+      transparent 30%
+    ),
+    #070707;
+
+  color: #f3f3f1;
+}
+
+/* =========================================================
+   HEADER
+   ========================================================= */
+
+.main-header {
+  position: relative;
+  width: 100%;
+  min-height: 174px;
+
+  padding: 42px 56px 0;
+
+  background:
+    linear-gradient(
+      180deg,
+      rgba(255,255,255,.035),
+      rgba(255,255,255,0)
+    );
+
+  border-bottom: 1px solid rgba(255,255,255,.07);
+
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+
+  gap: 30px;
+  overflow: hidden;
+}
+
+.main-header::before {
+  content: "";
+  position: absolute;
+  top: -180px;
+  left: 50%;
+  width: 520px;
+  height: 300px;
+
+  transform: translateX(-50%);
+
+  background:
+    radial-gradient(
+      ellipse,
+      rgba(255,255,255,.055),
+      transparent 70%
+    );
+
+  pointer-events: none;
+}
+
+.main-header::after {
+  content: "";
+  position: absolute;
+
+  left: 56px;
+  right: 56px;
+  bottom: 0;
+
+  height: 1px;
+
+  background:
+    linear-gradient(
+      90deg,
+      transparent,
+      rgba(255,255,255,.15),
+      transparent
+    );
+}
+
+/* =========================================================
+   HEADER CONTENT
+   ========================================================= */
+
+.header-content {
+  position: relative;
+  z-index: 2;
+  flex: 1;
+}
+
+/* =========================================================
+   ASSET HUB TITLE
+   ========================================================= */
+
+.gradient-text {
+  margin: 0 0 18px;
+
+  font-size: clamp(1.55rem, 3vw, 2.25rem);
+  font-weight: 700;
+
+  letter-spacing: .075em;
+  line-height: 1.1;
+
+  text-transform: uppercase;
+
+  background:
+    linear-gradient(
+      135deg,
+      #ffffff 0%,
+      #dcdcdc 45%,
+      #8c8c8c 100%
+    );
+
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+
+  opacity: 1 !important;
+}
+
+/* Remove old underline if present */
+
+.title-underline {
+  display: none;
+}
+
+/* =========================================================
+   NAVIGATION
+   ========================================================= */
+
+.nav-links {
+  position: relative;
+  z-index: 2;
+
+  margin: 0;
+
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+
+  gap: 22px;
+}
+
+.nav-links a {
+  color: rgba(255,255,255,.44) !important;
+
+  font-size: 11px;
+  font-weight: 600;
+
+  letter-spacing: .08em;
+  text-transform: uppercase;
+
+  text-decoration: none;
+
+  transition:
+    color .2s ease,
+    opacity .2s ease;
+}
+
+.nav-links a:hover {
+  color: #ffffff !important;
+}
+
+/* =========================================================
+   HEADER LOGOS
+   ========================================================= */
+
+.app-logo {
+  position: relative;
+  z-index: 2;
+
+  width: 58px;
+  height: 58px;
+
+  margin:
+    0
+    0
+    0
+    4px;
+
+  object-fit: contain;
+
+  border-radius: 14px;
+
+  opacity: .92 !important;
+
+  filter:
+    drop-shadow(0 8px 26px rgba(0,0,0,.5));
+
+  transition:
+    transform .25s ease,
+    opacity .25s ease;
+}
+
+.app-logo:hover {
+  transform: translateY(-2px);
+
+  opacity: 1 !important;
+}
+
+/* =========================================================
+   LOGIN / COVER AREA
+   ========================================================= */
+
+#loginView {
+  min-height: calc(100vh - 174px);
+
+  width: min(1180px, calc(100% - 32px));
+
+  margin: 0 auto;
+
+  padding:
+    72px
+    0
+    96px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* =========================================================
+   LOGIN CARD
+   ========================================================= */
+
+.login-card {
+  position: relative;
+
+  width: min(430px, 100%);
+
+  margin: 0;
+
+  padding: 42px;
+
+  background:
+    linear-gradient(
+      145deg,
+      rgba(255,255,255,.075),
+      rgba(255,255,255,.025)
+    );
+
+  border: 1px solid rgba(255,255,255,.10);
+
+  border-radius: 24px;
+
+  box-shadow:
+    0 38px 110px rgba(0,0,0,.58),
+    inset 0 1px 0 rgba(255,255,255,.07);
+
+  backdrop-filter: blur(18px);
+  -webkit-backdrop-filter: blur(18px);
+
+  overflow: hidden;
+}
+
+/* subtle internal light */
+
+.login-card::before {
+  content: "";
+
+  position: absolute;
+
+  inset: 0;
+
+  pointer-events: none;
+
+  border-radius: inherit;
+
+  background:
+    radial-gradient(
+      circle at 50% 0%,
+      rgba(255,255,255,.09),
+      transparent 50%
+    );
+}
+
+/* =========================================================
+   LOGIN TYPOGRAPHY
+   ========================================================= */
+
+.login-card .eyebrow {
+  position: relative;
+
+  margin-bottom: 14px;
+
+  color: rgba(255,255,255,.40);
+
+  font-size: 10px;
+  font-weight: 800;
+
+  letter-spacing: .22em;
+}
+
+.login-card p {
+  position: relative;
+
+  margin:
+    0
+    0
+    30px;
+
+  color: rgba(255,255,255,.58);
+
+  font-size: 14px;
+
+  line-height: 1.6;
+}
+
+/* =========================================================
+   LOGIN FORM
+   ========================================================= */
+
+.login-card form {
+  position: relative;
+}
+
+.login-card form label {
+  margin: 18px 0;
+
+  color: rgba(255,255,255,.70);
+
+  font-size: 12px;
+  font-weight: 700;
+
+  letter-spacing: .025em;
+}
+
+.login-card input:not([type="checkbox"]) {
+  margin-top: 8px;
+
+  padding: 14px 15px;
+
+  color: #ffffff;
+
+  background:
+    rgba(255,255,255,.045);
+
+  border:
+    1px solid rgba(255,255,255,.10);
+
+  border-radius: 12px;
+
+  outline: none;
+
+  transition:
+    background .2s ease,
+    border-color .2s ease,
+    box-shadow .2s ease;
+}
+
+.login-card input:not([type="checkbox"]):focus {
+  background:
+    rgba(255,255,255,.065);
+
+  border-color:
+    rgba(255,255,255,.30);
+
+  box-shadow:
+    0 0 0 3px rgba(255,255,255,.035);
+}
+
+.login-card input::placeholder {
+  color: rgba(255,255,255,.25);
+}
+
+/* =========================================================
+   LEGAL
+   ========================================================= */
+
+.login-card .legal {
+  margin-top: 22px;
+
+  color: rgba(255,255,255,.40);
+
+  font-size: 11px;
+
+  line-height: 1.55;
+}
+
+.login-card .legal a {
+  color: rgba(255,255,255,.78);
+
+  text-underline-offset: 3px;
+}
+
+.login-card .legal a:hover {
+  color: #ffffff;
+}
+
+/* =========================================================
+   SIGN IN
+   ========================================================= */
+
+.login-card #loginButton {
+  width: 100%;
+
+  margin-top: 12px;
+
+  padding: 14px 18px;
+
+  background:
+    linear-gradient(
+      135deg,
+      #ffffff,
+      #d5d5d5
+    );
+
+  color: #080808;
+
+  border-radius: 12px;
+
+  font-size: 12px;
+  font-weight: 800;
+
+  letter-spacing: .09em;
+
+  text-transform: uppercase;
+
+  box-shadow:
+    0 12px 38px rgba(0,0,0,.30);
+
+  transition:
+    transform .2s ease,
+    box-shadow .2s ease,
+    opacity .2s ease;
+}
+
+.login-card #loginButton:hover:not(:disabled) {
+  transform: translateY(-1px);
+
+  box-shadow:
+    0 18px 45px rgba(0,0,0,.42);
+}
+
+.login-card #loginButton:disabled {
+  background: #383838;
+
+  color: #777;
+
+  opacity: 1;
+}
+
+/* =========================================================
+   ERROR
+   ========================================================= */
+
+.login-card .error {
+  color: #ff8585;
+}
+
+/* =========================================================
+   FOOTER
+   ========================================================= */
+
+.footer-container {
+  width: min(1180px, calc(100% - 32px));
+
+  margin: 0 auto;
+
+  padding-top: 10px;
+}
+
+.footer-built {
+  color: rgba(255,255,255,.38);
+}
+
+.footer-separator {
+  color: rgba(255,255,255,.18);
+}
+
+.footer-logo {
+  opacity: .65;
+}
+
+/* =========================================================
+   MOBILE
+   ========================================================= */
+
+@media (max-width: 760px) {
+
+  .main-header {
+    min-height: auto;
+
+    padding:
+      28px
+      20px
+      24px;
+
+    gap: 14px;
+  }
+
+  .main-header::after {
+    left: 20px;
+    right: 20px;
+  }
+
+  .gradient-text {
+    font-size: 1.25rem;
+
+    letter-spacing: .055em;
+  }
+
+  .nav-links {
+    gap: 10px 16px;
+  }
+
+  .nav-links a {
+    font-size: 9px;
+  }
+
+  .app-logo {
+    width: 42px;
+    height: 42px;
+  }
+
+  #loginView {
+    width: min(100% - 24px, 520px);
+
+    min-height: calc(100vh - 120px);
+
+    padding:
+      42px
+      0
+      70px;
+  }
+
+  .login-card {
+    padding: 30px 24px;
+
+    border-radius: 20px;
+  }
+
+  .footer-container {
+    width: calc(100% - 24px);
+  }
+}
+
+
+/* =========================================================
+   ASSET HUB — DARK LUXURY / DIGITAL VAULT
+   Visual-only override
+   No HTML / JS changes required
+   ========================================================= */
+
+:root {
+  color: #f1f2f2;
+  background: #08090b;
+}
+
+
+/* ---------------------------------------------------------
+   GLOBAL
+   --------------------------------------------------------- */
+
+body {
+  background:
+    radial-gradient(
+      circle at 50% -18%,
+      rgba(255,255,255,.055),
+      transparent 34%
+    ),
+    radial-gradient(
+      circle at 7% 45%,
+      rgba(145,155,165,.022),
+      transparent 30%
+    ),
+    radial-gradient(
+      circle at 94% 70%,
+      rgba(185,195,205,.018),
+      transparent 28%
+    ),
+    linear-gradient(
+      180deg,
+      #08090b 0%,
+      #0a0b0d 55%,
+      #070809 100%
+    );
+
+  color: #f1f2f2;
+}
+
+
+/* ---------------------------------------------------------
+   HEADER
+   --------------------------------------------------------- */
+
+.main-header {
+  position: relative;
+
+  width: 100%;
+  min-height: 178px;
+
+  padding: 40px 56px 0;
+
+  background:
+    linear-gradient(
+      180deg,
+      rgba(255,255,255,.022),
+      rgba(255,255,255,0)
+    );
+
+  border-bottom:
+    1px solid
+    rgba(255,255,255,.075);
+
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+
+  gap: 30px;
+
+  overflow: hidden;
+}
+
+.main-header::before {
+  content: "";
+
+  position: absolute;
+
+  top: -220px;
+  left: 50%;
+
+  width: 640px;
+  height: 360px;
+
+  transform:
+    translateX(-50%);
+
+  background:
+    radial-gradient(
+      ellipse,
+      rgba(210,218,225,.055),
+      transparent 70%
+    );
+
+  pointer-events: none;
+}
+
+.main-header::after {
+  content: "";
+
+  position: absolute;
+
+  left: 56px;
+  right: 56px;
+  bottom: 0;
+
+  height: 1px;
+
+  background:
+    linear-gradient(
+      90deg,
+      transparent,
+      rgba(255,255,255,.13),
+      transparent
+    );
+}
+
+
+/* ---------------------------------------------------------
+   HEADER CONTENT
+   --------------------------------------------------------- */
+
+.header-content {
+  position: relative;
+  z-index: 2;
+
+  flex: 1;
+}
+
+.gradient-text {
+  margin: 0 0 18px;
+
+  font-family:
+    "Manrope",
+    "DM Sans",
+    sans-serif;
+
+  font-size:
+    clamp(
+      1.55rem,
+      3vw,
+      2.25rem
+    );
+
+  font-weight: 700;
+
+  letter-spacing: .095em;
+
+  line-height: 1.08;
+
+  text-transform: uppercase;
+
+  background:
+    linear-gradient(
+      135deg,
+      #ffffff 0%,
+      #e7e9eb 42%,
+      #aeb4ba 76%,
+      #777e85 100%
+    );
+
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+
+  opacity: 1 !important;
+
+  text-shadow:
+    0 12px 35px
+    rgba(0,0,0,.38);
+}
+
+.title-underline {
+  display: none;
+}
+
+
+/* ---------------------------------------------------------
+   NAVIGATION
+   --------------------------------------------------------- */
+
+.nav-links {
+  position: relative;
+  z-index: 2;
+
+  margin: 0;
+
+  display: flex;
+  flex-wrap: wrap;
+
+  align-items: center;
+
+  gap: 22px;
+}
+
+.nav-links a {
+  color:
+    rgba(235,238,240,.42)
+    !important;
+
+  font-family:
+    "DM Sans",
+    sans-serif;
+
+  font-size: 10px;
+
+  font-weight: 600;
+
+  letter-spacing: .095em;
+
+  text-transform: uppercase;
+
+  text-decoration: none;
+
+  transition:
+    color .25s ease,
+    opacity .25s ease;
+}
+
+.nav-links a:hover {
+  color:
+    #eef0f1
+    !important;
+}
+
+
+/* ---------------------------------------------------------
+   LOGOS
+   --------------------------------------------------------- */
+
+.app-logo {
+  position: relative;
+  z-index: 2;
+
+  width: 58px;
+  height: 58px;
+
+  margin: 0 0 0 4px;
+
+  object-fit: contain;
+
+  border-radius: 14px;
+
+  opacity: .88 !important;
+
+  filter:
+    grayscale(.12)
+    drop-shadow(
+      0 10px 28px
+      rgba(0,0,0,.58)
+    );
+
+  transition:
+    transform .3s ease,
+    opacity .3s ease,
+    filter .3s ease;
+}
+
+.app-logo:hover {
+  transform:
+    translateY(-2px);
+
+  opacity: 1 !important;
+
+  filter:
+    grayscale(0)
+    drop-shadow(
+      0 14px 34px
+      rgba(210,218,225,.10)
+    );
+}
+
+
+/* ---------------------------------------------------------
+   LOGIN AREA
+   --------------------------------------------------------- */
+
+#loginView {
+  position: relative;
+
+  min-height:
+    calc(100vh - 178px);
+
+  width:
+    min(
+      1180px,
+      calc(100% - 32px)
+    );
+
+  margin: 0 auto;
+
+  padding:
+    76px 0 100px;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+}
+
+#loginView::before {
+  content: "";
+
+  position: absolute;
+
+  left: 50%;
+  top: 50%;
+
+  width: 540px;
+  height: 420px;
+
+  transform:
+    translate(-50%, -48%);
+
+  background:
+    radial-gradient(
+      ellipse,
+      rgba(180,190,200,.035),
+      transparent 68%
+    );
+
+  pointer-events: none;
+}
+
+
+/* ---------------------------------------------------------
+   LOGIN CARD
+   --------------------------------------------------------- */
+
+.login-card {
+  position: relative;
+  z-index: 2;
+
+  width:
+    min(
+      430px,
+      100%
+    );
+
+  margin: 0;
+
+  padding:
+    44px 42px 42px;
+
+  background:
+    linear-gradient(
+      145deg,
+      rgba(255,255,255,.062),
+      rgba(255,255,255,.016)
+    );
+
+  border:
+    1px solid
+    rgba(255,255,255,.095);
+
+  border-radius: 24px;
+
+  box-shadow:
+    0 42px 115px
+    rgba(0,0,0,.64),
+
+    inset 0 1px 0
+    rgba(255,255,255,.06);
+
+  backdrop-filter:
+    blur(20px);
+
+  -webkit-backdrop-filter:
+    blur(20px);
+
+  overflow: hidden;
+}
+
+.login-card::before {
+  content: "";
+
+  position: absolute;
+  inset: 0;
+
+  border-radius: inherit;
+
+  background:
+    radial-gradient(
+      circle at 50% 0%,
+      rgba(215,220,225,.065),
+      transparent 48%
+    );
+
+  pointer-events: none;
+}
+
+.login-card::after {
+  content: "";
+
+  position: absolute;
+
+  top: 0;
+  left: 12%;
+  right: 12%;
+
+  height: 1px;
+
+  background:
+    linear-gradient(
+      90deg,
+      transparent,
+      rgba(230,234,237,.34),
+      transparent
+    );
+
+  opacity: .7;
+}
+
+
+/* ---------------------------------------------------------
+   LOGIN TYPOGRAPHY
+   --------------------------------------------------------- */
+
+.login-card .eyebrow {
+  position: relative;
+
+  margin-bottom: 14px;
+
+  color:
+    rgba(205,211,216,.58);
+
+  font-family:
+    "DM Sans",
+    sans-serif;
+
+  font-size: 10px;
+
+  font-weight: 800;
+
+  letter-spacing: .24em;
+
+  text-transform: uppercase;
+}
+
+.login-card p {
+  position: relative;
+
+  margin: 0 0 30px;
+
+  color:
+    rgba(235,238,240,.56);
+
+  font-family:
+    "DM Sans",
+    sans-serif;
+
+  font-size: 14px;
+
+  line-height: 1.65;
+}
+
+
+/* ---------------------------------------------------------
+   FORM
+   --------------------------------------------------------- */
+
+.login-card form {
+  position: relative;
+}
+
+.login-card form label {
+  margin: 18px 0;
+
+  color:
+    rgba(235,238,240,.66);
+
+  font-family:
+    "DM Sans",
+    sans-serif;
+
+  font-size: 11px;
+
+  font-weight: 700;
+
+  letter-spacing: .035em;
+}
+
+.login-card input:not([type="checkbox"]) {
+  margin-top: 8px;
+
+  padding: 14px 15px;
+
+  color: #f5f6f7;
+
+  font-family:
+    "DM Sans",
+    sans-serif;
+
+  background:
+    rgba(255,255,255,.032);
+
+  border:
+    1px solid
+    rgba(255,255,255,.09);
+
+  border-radius: 11px;
+
+  outline: none;
+
+  transition:
+    background .25s ease,
+    border-color .25s ease,
+    box-shadow .25s ease;
+}
+
+.login-card input:not([type="checkbox"]):hover {
+  border-color:
+    rgba(215,220,225,.18);
+}
+
+.login-card input:not([type="checkbox"]):focus {
+  background:
+    rgba(255,255,255,.047);
+
+  border-color:
+    rgba(220,225,230,.38);
+
+  box-shadow:
+    0 0 0 3px
+    rgba(220,225,230,.035),
+
+    0 8px 30px
+    rgba(0,0,0,.20);
+}
+
+.login-card input::placeholder {
+  color:
+    rgba(235,238,240,.22);
+}
+
+
+/* ---------------------------------------------------------
+   LEGAL
+   --------------------------------------------------------- */
+
+.login-card .legal {
+  margin-top: 22px;
+
+  color:
+    rgba(235,238,240,.36);
+
+  font-family:
+    "DM Sans",
+    sans-serif;
+
+  font-size: 10.5px;
+
+  line-height: 1.6;
+}
+
+.login-card .legal a {
+  color:
+    rgba(218,223,227,.70);
+
+  text-underline-offset: 3px;
+
+  transition:
+    color .2s ease;
+}
+
+.login-card .legal a:hover {
+  color:
+    #f1f3f4;
+}
+
+
+/* ---------------------------------------------------------
+   SIGN IN BUTTON
+   --------------------------------------------------------- */
+
+.login-card #loginButton {
+  width: 100%;
+
+  margin-top: 12px;
+
+  padding: 14px 18px;
+
+  background:
+    linear-gradient(
+      135deg,
+      #f1f2f2 0%,
+      #d9dcde 48%,
+      #b9bec2 100%
+    );
+
+  color:
+    #101214;
+
+  border:
+    1px solid
+    rgba(255,255,255,.34);
+
+  border-radius: 11px;
+
+  font-family:
+    "DM Sans",
+    sans-serif;
+
+  font-size: 11px;
+
+  font-weight: 800;
+
+  letter-spacing: .105em;
+
+  text-transform: uppercase;
+
+  box-shadow:
+    0 12px 36px
+    rgba(0,0,0,.38),
+
+    inset 0 1px 0
+    rgba(255,255,255,.42);
+
+  transition:
+    transform .25s ease,
+    box-shadow .25s ease,
+    filter .25s ease,
+    opacity .25s ease;
+}
+
+.login-card #loginButton:hover:not(:disabled) {
+  transform:
+    translateY(-1px);
+
+  filter:
+    brightness(1.045);
+
+  box-shadow:
+    0 18px 46px
+    rgba(0,0,0,.46),
+
+    0 0 30px
+    rgba(215,220,225,.055);
+}
+
+.login-card #loginButton:active:not(:disabled) {
+  transform:
+    translateY(0);
+}
+
+.login-card #loginButton:disabled {
+  background:
+    #323538;
+
+  color:
+    #777c80;
+
+  opacity: 1;
+
+  box-shadow: none;
+}
+
+
+/* ---------------------------------------------------------
+   ERROR
+   --------------------------------------------------------- */
+
+.login-card .error {
+  color:
+    #d58b86;
+}
+
+
+/* ---------------------------------------------------------
+   FOOTER
+   --------------------------------------------------------- */
+
+.footer-container {
+  width:
+    min(
+      1180px,
+      calc(100% - 32px)
+    );
+
+  margin: 0 auto;
+
+  padding-top: 10px;
+}
+
+.footer-built {
+  color:
+    rgba(235,238,240,.32);
+}
+
+.footer-separator {
+  color:
+    rgba(210,216,220,.16);
+}
+
+.footer-logo {
+  opacity: .55;
+}
+
+
+/* ---------------------------------------------------------
+   MOBILE
+   --------------------------------------------------------- */
+
+@media (max-width: 760px) {
+
+  .main-header {
+    min-height: auto;
+
+    padding:
+      28px 20px 24px;
+
+    gap: 14px;
+  }
+
+  .main-header::after {
+    left: 20px;
+    right: 20px;
+  }
+
+  .gradient-text {
+    font-size: 1.25rem;
+
+    letter-spacing: .065em;
+  }
+
+  .nav-links {
+    gap:
+      10px 16px;
+  }
+
+  .nav-links a {
+    font-size: 9px;
+  }
+
+  .app-logo {
+    width: 42px;
+    height: 42px;
+  }
+
+  #loginView {
+    width:
+      min(
+        100% - 24px,
+        520px
+      );
+
+    min-height:
+      calc(100vh - 120px);
+
+    padding:
+      42px 0 70px;
+  }
+
+  .login-card {
+    padding:
+      32px 24px;
+
+    border-radius: 20px;
+  }
+
+  .footer-container {
+    width:
+      calc(100% - 24px);
+  }
+}
