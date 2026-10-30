@@ -662,7 +662,12 @@
           "updatedAt": "2026-10-30T20:25:13.015Z"
         },
         "cover": null,
-        "logo": null,
+        "logo": {
+          "filename": "logo.jpg",
+          "contentType": "image/jpeg",
+          "extension": "jpg",
+          "updatedAt": "2026-10-30T20:25:36.911Z"
+        },
         "og-image": null,
         "screenshots": {},
         "sub-logos": {}
