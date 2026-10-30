@@ -870,7 +870,12 @@
       "name": "Adel | SI Foundation",
       "createdAt": "2026-10-30T19:11:55.435Z",
       "assets": {
-        "banner": null,
+        "banner": {
+          "filename": "banner.png",
+          "contentType": "image/png",
+          "extension": "png",
+          "updatedAt": "2026-10-30T20:41:43.442Z"
+        },
         "cover": null,
         "logo": null,
         "og-image": null,
