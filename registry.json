@@ -234,7 +234,12 @@
       "name": "Adel | Trading Setup Optimizer",
       "createdAt": "2026-10-30T19:07:32.648Z",
       "assets": {
-        "banner": null,
+        "banner": {
+          "filename": "banner.png",
+          "contentType": "image/png",
+          "extension": "png",
+          "updatedAt": "2026-10-30T19:52:02.479Z"
+        },
         "cover": null,
         "logo": null,
         "og-image": null,
