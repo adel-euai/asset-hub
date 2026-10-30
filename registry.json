@@ -311,7 +311,12 @@
           "updatedAt": "2026-10-30T19:56:34.917Z"
         },
         "cover": null,
-        "logo": null,
+        "logo": {
+          "filename": "logo.png",
+          "contentType": "image/png",
+          "extension": "png",
+          "updatedAt": "2026-10-30T19:57:05.691Z"
+        },
         "og-image": null,
         "screenshots": {},
         "sub-logos": {}
