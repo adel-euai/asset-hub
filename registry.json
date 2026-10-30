@@ -674,10 +674,10 @@
           "updatedAt": "2026-10-30T21:23:15.636Z"
         },
         "og-image": {
-          "filename": "og-image.jpg",
-          "contentType": "image/jpeg",
-          "extension": "jpg",
-          "updatedAt": "2026-10-30T20:26:31.058Z"
+          "filename": "og-image.png",
+          "contentType": "image/png",
+          "extension": "png",
+          "updatedAt": "2026-10-30T21:26:03.263Z"
         },
         "screenshots": {
           "1": {
