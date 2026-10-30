@@ -270,6 +270,12 @@
             "contentType": "image/png",
             "extension": "png",
             "updatedAt": "2026-10-30T19:54:19.036Z"
+          },
+          "3": {
+            "filename": "3.png",
+            "contentType": "image/png",
+            "extension": "png",
+            "updatedAt": "2026-10-30T19:54:38.023Z"
           }
         },
         "sub-logos": {}
