@@ -909,7 +909,12 @@
           "extension": "png",
           "updatedAt": "2026-10-30T20:43:43.557Z"
         },
-        "cover": null,
+        "cover": {
+          "filename": "cover.png",
+          "contentType": "image/png",
+          "extension": "png",
+          "updatedAt": "2026-10-30T20:44:29.928Z"
+        },
         "logo": {
           "filename": "logo.png",
           "contentType": "image/png",
