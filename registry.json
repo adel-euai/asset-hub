@@ -609,7 +609,14 @@
           "extension": "png",
           "updatedAt": "2026-10-30T20:20:47.798Z"
         },
-        "screenshots": {},
+        "screenshots": {
+          "1": {
+            "filename": "1.png",
+            "contentType": "image/png",
+            "extension": "png",
+            "updatedAt": "2026-10-30T20:21:11.407Z"
+          }
+        },
         "sub-logos": {}
       }
     },
