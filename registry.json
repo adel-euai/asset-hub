@@ -120,7 +120,7 @@
           "filename": "cover.png",
           "contentType": "image/png",
           "extension": "png",
-          "updatedAt": "2026-10-30T21:44:46.698Z"
+          "updatedAt": "2026-10-30T22:43:17.591Z"
         },
         "logo": {
           "filename": "logo.png",
@@ -128,7 +128,12 @@
           "extension": "png",
           "updatedAt": "2026-10-30T18:57:57.873Z"
         },
-        "og-image": null,
+        "og-image": {
+          "filename": "og-image.png",
+          "contentType": "image/png",
+          "extension": "png",
+          "updatedAt": "2026-10-30T22:43:45.823Z"
+        },
         "screenshots": {},
         "sub-logos": {}
       }
@@ -143,7 +148,7 @@
           "filename": "cover.png",
           "contentType": "image/png",
           "extension": "png",
-          "updatedAt": "2026-10-30T21:45:17.267Z"
+          "updatedAt": "2026-10-30T22:42:26.009Z"
         },
         "logo": {
           "filename": "logo.png",
@@ -151,7 +156,12 @@
           "extension": "png",
           "updatedAt": "2026-10-30T18:59:04.217Z"
         },
-        "og-image": null,
+        "og-image": {
+          "filename": "og-image.png",
+          "contentType": "image/png",
+          "extension": "png",
+          "updatedAt": "2026-10-30T22:42:47.421Z"
+        },
         "screenshots": {},
         "sub-logos": {}
       }
