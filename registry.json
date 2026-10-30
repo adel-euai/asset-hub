@@ -585,7 +585,12 @@
       "name": "Adel | The Collection",
       "createdAt": "2026-10-30T19:08:57.343Z",
       "assets": {
-        "banner": null,
+        "banner": {
+          "filename": "banner.png",
+          "contentType": "image/png",
+          "extension": "png",
+          "updatedAt": "2026-10-30T20:19:41.648Z"
+        },
         "cover": null,
         "logo": null,
         "og-image": null,
