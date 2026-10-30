@@ -888,7 +888,12 @@
           "extension": "png",
           "updatedAt": "2026-10-30T20:42:05.967Z"
         },
-        "og-image": null,
+        "og-image": {
+          "filename": "og-image.png",
+          "contentType": "image/png",
+          "extension": "png",
+          "updatedAt": "2026-10-30T20:42:58.032Z"
+        },
         "screenshots": {},
         "sub-logos": {}
       }
